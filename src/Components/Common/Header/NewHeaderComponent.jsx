@@ -32,16 +32,20 @@ const NewHeaderComponent = () => {
 
         {/* Desktop Navigation */}
         <div className={`flex items-center px-[0px] xl:mx-[10px] max-[1050px]:hidden relative w-fit me-auto group h-full before:absolute before:h-0 before:transition-all before:duration-500 before:bg-white before:w-screen before:right-0 before:top-[80px] before:z-[5] after:z-[1] after:fixed after:right-0 after:w-screen after:h-[calc(100vh-80px)] after:top-[80px] after:opacity-0 after:invisible after:duration-500 after:transition-all after:bg-[#1A02AD4D] ${showMenu ? "before:h-screen after:opacity-100 after:visible" : ""}`}>
-          {Object.entries(menuData).map(([menuTitle, data]) => (
-            <Fragment key={menuTitle}>
-              <DesktopMenu
-                menuTitle={menuTitle}
-                menuData={data}
-                onMouseEnter={() => setShowMenu(true)}
-                onMouseLeave={() => setShowMenu(false)}
-              />
-            </Fragment>
-          ))}
+          {Object.entries(menuData).map(([menuTitle, data]) => {
+            const extractedLink = data?.sections?.[0]?.link || '/';
+            return (
+              <Fragment key={menuTitle}>
+                <DesktopMenu
+                  menuTitle={menuTitle}
+                  menuData={data}
+                  menuLink={extractedLink}
+                  onMouseEnter={() => setShowMenu(true)}
+                  onMouseLeave={() => setShowMenu(false)}
+                />
+              </Fragment>
+            );
+          })}
         </div>
 
         {/* Desktop Action Buttons */}

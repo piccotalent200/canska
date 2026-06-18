@@ -3,26 +3,26 @@ const menuData = {
     sections: [
       {
         title: 'The Quad Program',
+        link: '/quad-program',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sociis natoque penatibus et magnis dis parturient.',
         cta: 'Learn More',
       },
       {
         links: [
           {
-            title: 'Program Overview',
+            title: 'The Quad Lesson Verticals',
+            mainLink: '/quad-lesson-verticals',
             subLinks: ['Program Structure', 'Learning Outcomes', 'Duration & Schedule']
           },
           {
-            title: 'Curriculum Details',
+            title: 'The Quad Lesson Sample',
+            mainLink: '/',
             subLinks: ['Core Subjects', 'Electives', 'Assessment Methods']
           },
           {
-            title: 'Student Journey',
+            title: 'Why Quad Program?',
+            mainLink: '/why-quad-program',
             subLinks: ['Admission Process', 'Academic Support', 'Graduate Outcomes']
-          },
-          {
-            title: 'Application Process',
-            subLinks: ['Requirements', 'Deadlines', 'Application Form']
           },
         ],
       },
@@ -33,6 +33,7 @@ const menuData = {
     sections: [
       {
         title: 'University & Career',
+         link: '/',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sociis natoque penatibus et magnis dis parturient.',
         cta: 'Learn More',
       },
@@ -63,6 +64,7 @@ const menuData = {
     sections: [
       {
         title: 'Why Choose Canska',
+         link: '/why-canska',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sociis natoque penatibus et magnis dis parturient.',
         cta: 'Learn More',
       },
