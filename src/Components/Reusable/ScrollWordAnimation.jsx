@@ -32,7 +32,7 @@ const ScrollWordAnimation = ({
       if (part.trim()) {
         // This is a word
         const wordIndex = parts.slice(0, index).filter(w => w.trim()).length
-        return `<span class="word-span inline-block transition-colors duration-150 ease-out" data-word-index="${wordIndex}" style="color: #1F242E;">${part}</span>`
+        return `<span className="word-span inline-block transition-colors duration-150 ease-out" data-word-index="${wordIndex}" style="color: #1F242E;">${part}</span>`
       } else {
         // This is whitespace - preserve it but convert newlines to <br>
         return part.replace(/\n/g, '<br />')

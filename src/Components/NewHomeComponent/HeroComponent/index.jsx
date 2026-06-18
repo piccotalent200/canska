@@ -4,7 +4,74 @@ import React from 'react'
 import { useEffect, useRef } from 'react'
 import ScrollAnimatedElement from '@/Components/Reusable/ScrollAnimatedElement'
 
+
+const universityLogos = [
+    { name: 'University of Oxford', src: '/img/university-of-oxford.jpg' },
+    { name: 'Harvard University', src: '/img/harvard-university.jpg' },
+    { name: 'University of Cambridge', src: '/img/university-of-cambridge.jpg' },
+    { name: 'ETH Zurich', src: '/img/eth-zurich.jpg' },
+    { name: 'National University of Singapore', src: '/img/national-university-of-singapore.jpg' },
+    { name: 'University College London', src: '/img/university-college-london.jpg' },
+    { name: 'Caltech', src: '/img/caltech.jpg' },
+    { name: 'The University of Hong Kong', src: '/img/the-university-of-hong-kong.jpg' },
+    { name: 'Nanyang Technological University', src: '/img/nanyang-technological-university.jpg' },
+    { name: 'The University of Chicago', src: '/img/the-university-of-chicago.jpg' },
+    { name: 'Peking University', src: '/img/peking-university.jpg' },
+    { name: 'University of Pennsylvania', src: '/img/university-of-pennsylvania.jpg' },
+    { name: 'Cornell University', src: '/img/cornell-university.jpg' },
+    { name: 'Tsinghua University', src: '/img/tsinghua-university.jpg' },
+    { name: 'University of California, Berkeley', src: '/img/university-of-california-berkeley.jpg' },
+    { name: 'The University of Melbourne', src: '/img/the-university-of-melbourne.jpg' },
+    { name: 'The University of New South Wales', src: '/img/the-university-of-new-south-wales.jpg' },
+    { name: 'Yale University', src: '/img/yale-university.jpg' },
+    { name: 'EPFL', src: '/img/epfl.jpg' },
+    { name: 'Technical University of Munich', src: '/img/technical-university-of-munich.jpg' },
+    { name: 'Johns Hopkins University', src: '/img/johns-hopkins-university.jpg' },
+    { name: 'University of Sydney', src: '/img/university-of-sydney.jpg' },
+    { name: 'Princeton University', src: '/img/princeton-university.jpg' },
+    { name: 'McGill University', src: '/img/mcgill-university.jpg' },
+    { name: 'Université PSL', src: '/img/universite-psl.jpg' },
+    { name: 'University of Toronto', src: '/img/university-of-toronto.jpg' },
+    { name: 'Fudan University', src: '/img/fudan-university.jpg' },
+    { name: 'Kings College London', src: '/img/kings-college-london.jpg' },
+    { name: 'Australian National University', src: '/img/australian-national-university.jpg' },
+    { name: 'The Chinese University of Hong Kong', src: '/img/the-chinese-university-of-hong-kong.jpg' },
+    { name: 'University of Edinburgh', src: '/img/university-of-editburgh.jpg' },
+    { name: 'University of Manchester', src: '/img/university-of-manchester.jpg' },
+    { name: 'Monash University', src: '/img/monash-university.jpg' },
+    { name: 'University of Tokyo', src: '/img/university-of-tokyo.jpg' },
+    { name: 'Columbia University', src: '/img/columbia-university.jpg' },
+    { name: 'Seoul National University', src: '/img/seoul-national-university.jpg' },
+    { name: 'University of British Columbia', src: '/img/university-of-british-columbia.jpg' },
+    { name: 'Institut Polytechnique de Paris', src: '/img/institut-polytechnique-de-paris.jpg' },
+    { name: 'Northwestern University', src: '/img/northwestern-university.jpg' },
+    { name: 'University of Queensland', src: '/img/university-of-queensland.jpg' },
+    { name: 'Hong Kong University of Science and Technology', src: '/img/hong-kong-university-of-science-and-technology.jpg' },
+    { name: 'University of Michigan-Ann Arbor', src: '/img/university-of-michigan-ann-arbor.jpg' },
+    { name: 'University of California, Los Angeles', src: '/img/university-of-california-los-angeles.jpg' },
+    { name: 'Delft University of Technology', src: '/img/delft-university-of-technology.jpg' },
+    { name: 'Shanghai Jiao Tong University', src: '/img/shanghai-jiao-tong-university.jpg' },
+    { name: 'Zhejiang University', src: '/img/zhejiang-university.jpg' },
+    { name: 'Yonsei University', src: '/img/yonsei-university.jpg' },
+    { name: 'University of Bristol', src: '/img/university-of-bristol.jpg' },
+    { name: 'Carnegie Mellon', src: '/img/carnegie-mellon.jpg' },
+    { name: 'University of Amsterdam', src: '/img/university-of-amsterdam.jpg' },
+    { name: 'The Hong Kong Polytechnic University', src: '/img/the-hong-kong-polytechnic-university.jpg' },
+    { name: 'New York University', src: '/img/new-york-university.jpg' },
+    { name: 'London School of Economics', src: '/img/london-school-of-economics.jpg' },
+    { name: 'Kyoto University', src: '/img/kyoto-university.jpg' },
+    { name: 'Ludwig-Maximilians-Universität', src: '/img/ludwig-maximilians-universitat.jpg' },
+    { name: 'Universiti Malaya', src: '/img/universiti-malaya.jpg' },
+    { name: 'KU Leuven', src: '/img/ku-leuven.jpg' },
+    { name: 'Imperial College London', src: '/img/Imperial-College-London.jpg' },
+    { name: 'Massachusetts Institute of Technology', src: '/img/Massachusetts-Institute-of-Technology.jpg' },
+    { name: 'Stanford University', src: '/img/Stanford-University.jpg' }
+];
+
+
 const HeroComponent = () => {
+
+    const scrollItems = [...universityLogos, ...universityLogos, ...universityLogos];
     const scrollRef = useRef(null)
 
     useEffect(() => {
@@ -13,10 +80,10 @@ const HeroComponent = () => {
 
         let scrollAmount = 0
         const scrollSpeed = 1
-        
+
         const animate = () => {
             scrollAmount += scrollSpeed
-            
+
             // Calculate responsive dimensions
             const getResponsiveDimensions = () => {
                 const width = window.innerWidth
@@ -28,30 +95,30 @@ const HeroComponent = () => {
                     return { logoWidth: 120, gap: 16 }
                 }
             }
-            
+
             const { logoWidth, gap } = getResponsiveDimensions()
-            
+
             // Calculate the width of one complete set (5 logos + 4 gaps)
             const oneSetWidth = (logoWidth * 5) + (gap * 4)
-            
+
             // Reset when we've scrolled past one complete set
             if (scrollAmount >= oneSetWidth) {
                 scrollAmount = 0
             }
-            
+
             scrollContainer.style.transform = `translateX(-${scrollAmount}px)`
             requestAnimationFrame(animate)
         }
-        
+
         const animationId = requestAnimationFrame(animate)
-        
+
         return () => cancelAnimationFrame(animationId)
     }, [])
 
     return (
         <section>
             <div className='relative overflow-hidden w-full min-h-wrap'>
-                
+
                 {/* Background Video Element */}
                 <video
                     autoPlay
@@ -59,7 +126,7 @@ const HeroComponent = () => {
                     muted
                     playsInline
                     poster="/img/hero-banner-image.svg" /* Fallback image while video loads */
-                    className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                    className="top-0 left-0 w-full h-full object-cover z-0"
                 >
                     <source src="/video/canska-video.mp4" type="video/mp4" />
                     {/* Add fallback sources here if you have .webm formats */}
@@ -67,10 +134,10 @@ const HeroComponent = () => {
                 </video>
 
                 {/* Dark Overlay Layer - Keeps typography readable */}
-                <div className='relative z-10 bg-[rgba(31,35,46,0.45)] sm:bg-[linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),linear-gradient(180deg,rgba(31,35,46,0.2)_0%,rgba(31,35,46,0.55)_85%,rgba(31,35,46,0.85)_100%)] p-[20px_16px_60px_16px] sm:p-[29px_32px_80px_32px] lg:p-[29px_95px_127px_48px] grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-0'>
+                {/* <div className='relative z-10 bg-[rgba(31,35,46,0.45)] sm:bg-[linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),linear-gradient(180deg,rgba(31,35,46,0.2)_0%,rgba(31,35,46,0.55)_85%,rgba(31,35,46,0.85)_100%)] p-[20px_16px_60px_16px] sm:p-[29px_32px_80px_32px] lg:p-[29px_95px_127px_48px] grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-0'> */}
 
-                    {/* Left Column Content */}
-                    <div>
+                {/* Left Column Content */}
+                {/* <div>
                         <ScrollAnimatedElement delay={0.1}>
                             <div className='flex flex-wrap gap-[8px] sm:gap-[12px] mb-[12px]'>
                                 <div className='text-[9px] sm:text-[11px] leading-[14px] sm:leading-[16px] text-[#1F232E] p-[4px_8px] sm:p-[6px_12px] bg-[#FFB433F2] rounded-[999px] uppercase'>
@@ -128,10 +195,10 @@ const HeroComponent = () => {
                         <ScrollAnimatedElement delay={0.6}>
                             <p className='text-[10px] sm:text-[11px] leading-[14px] sm:leading-[16px] font-normal text-[#FFFFFFB2] flex items-center gap-[8px] sm:gap-[12px] before:w-[30px] sm:before:w-[40px] before:h-[1px] before:bg-[#FFFFFF66]'>Scroll · The Marathon Begins</p>
                         </ScrollAnimatedElement>
-                    </div>
+                    </div> */}
 
-                    {/* Right Column Content */}
-                    <div className='flex flex-col justify-between gap-[16px]'>
+                {/* Right Column Content */}
+                {/* <div className='flex flex-col justify-between gap-[16px]'>
                         <ScrollAnimatedElement delay={0.3} yOffset={30}>
                             <div className='p-[16px] sm:p-[20px] bg-[#FAF8F3] rounded-[16px] lg:max-w-[280px] ms-auto w-full'>
                                 <span className='inline-block p-[4px_8px] sm:p-[6px_12px] rounded-[999px] bg-[#FFB433] text-[10px] sm:text-[11px] leading-[14px] sm:leading-[16px] font-bold text-[#1F232E] mb-[8px] sm:mb-[12px]'>Live Cohort</span>
@@ -162,9 +229,9 @@ const HeroComponent = () => {
                                 </div>
                             </div>
                         </ScrollAnimatedElement>
-                    </div>
+                    </div> */}
 
-                </div>
+                {/* </div> */}
             </div>
 
             <div className='p-[0_16px_0px] sm:p-[0_32px_0px] lg:p-[0_61px_0px] bg-[#FAF8F3]'>
@@ -184,58 +251,22 @@ const HeroComponent = () => {
                         </ScrollAnimatedElement>
                     </div>
                     <ScrollAnimatedElement className='overflow-hidden relative' delay={0.6}>
-                        <div 
+                        <div
                             ref={scrollRef}
                             className='flex gap-[16px] sm:gap-[20px] lg:gap-[27px]'
                         >
-                            {/* First set of logos */}
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/cambridge.svg" alt="Massachusetts Institute of Technology" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/eth.svg" alt="Imperial College London" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/nus.svg" alt="Harvard University" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/ucl.svg" alt="Stanford University" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/caltech.svg" alt="Oxford University" />
-                            </div>
-                            {/* Second set for seamless loop */}
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/cambridge.svg" alt="Massachusetts Institute of Technology" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/eth.svg" alt="Imperial College London" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/nus.svg" alt="Harvard University" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/ucl.svg" alt="Stanford University" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/caltech.svg" alt="Oxford University" />
-                            </div>
-                            {/* Third set for extra buffer */}
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/cambridge.svg" alt="Massachusetts Institute of Technology" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/eth.svg" alt="Imperial College London" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/nus.svg" alt="Harvard University" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/ucl.svg" alt="Stanford University" />
-                            </div>
-                            <div className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'>
-                                <img className='w-full object-contain' src="/img/caltech.svg" alt="Oxford University" />
-                            </div>
+                            {scrollItems.map((logo, index) => (
+                                <div
+                                    key={`${logo.name}-${index}`}
+                                    className='flex-shrink-0 border border-solid border-[#E8E3D8] bg-white p-[20px_10px] sm:p-[30px_12px] lg:p-[40px_17px] flex items-center justify-center rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] w-[120px] sm:w-[140px] lg:w-[160px] min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] h-[110px]'
+                                >
+                                    <img
+                                        className='w-full object-contain'
+                                        src={logo.src}
+                                        alt={logo.name}
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </ScrollAnimatedElement>
 

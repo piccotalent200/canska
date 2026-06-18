@@ -26,7 +26,7 @@ const CustomDropdownIndicator = (props) => {
     );
 };
 
-const FormSelect = ({ label, options, value, onChange }) => {
+const FormSelect = ({ label, options, value, onChange, instanceId }) => {
     const customSelectStyles = {
         control: (provided, state) => ({
             ...provided,
@@ -89,6 +89,7 @@ const FormSelect = ({ label, options, value, onChange }) => {
 
     return (
         <Select
+            instanceId={instanceId ?? label}
             options={options}
             value={value}
             onChange={onChange}

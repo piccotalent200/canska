@@ -3,6 +3,9 @@
 import React from 'react';
 import { DatePicker } from 'antd';
 import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat'
+
+dayjs.extend(customParseFormat);
 
 // 1. Extract your custom SVG to a clean sub-component
 const CustomCalendarIcon = () => (
@@ -24,7 +27,7 @@ export function FormDatePicker({ label, value, onChange, placeholder = "dd - mm 
     return (
         <DatePicker
             /* Converts date string back to dayjs object instance */
-            value={value ? dayjs(value) : null}
+            value={value ? dayjs(value, "DD - MM - YYYY") : null}
             /* Returns clean standard format back to parent state handler */
             onChange={(date, dateString) => onChange(dateString)}
             format="DD - MM - YYYY"
