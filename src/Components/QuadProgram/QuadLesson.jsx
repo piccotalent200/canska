@@ -7,7 +7,7 @@ const QuadLesson = () => {
 
     const breadcrumbLinks = [
         { label: 'Home', href: '/' },
-        { label: 'The Quad Program', href: '/programs/quad' },
+        { label: 'The Quad Program', href: '/quad-program' },
         { label: 'The Quad Lesson Verticals', href: '/programs/quad/verticals' }
     ];
 

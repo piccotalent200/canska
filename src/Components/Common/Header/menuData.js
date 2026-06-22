@@ -1,23 +1,26 @@
+
+
+
 const menuData = {
   'The Quad Program': {
     sections: [
       {
         title: 'The Quad Program',
         link: '/quad-program',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sociis natoque penatibus et magnis dis parturient.',
+        description: "Canska presents the world's first 12-year scholarship incubation program specifically architected for students aged eight and above.",
         cta: 'Learn More',
       },
       {
         links: [
           {
+            title: 'Quad Program Overview',
+            mainLink: '/quad-program',
+            subLinks: ['Core Subjects', 'Electives', 'Assessment Methods']
+          },
+          {
             title: 'The Quad Lesson Verticals',
             mainLink: '/quad-lesson-verticals',
             subLinks: ['Program Structure', 'Learning Outcomes', 'Duration & Schedule']
-          },
-          {
-            title: 'The Quad Lesson Sample',
-            mainLink: '/',
-            subLinks: ['Core Subjects', 'Electives', 'Assessment Methods']
           },
           {
             title: 'Why Quad Program?',
@@ -29,30 +32,36 @@ const menuData = {
     ],
   },
 
-  'University & Career': {
+  'University Prep': {
     sections: [
       {
-        title: 'University & Career',
-         link: '/',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sociis natoque penatibus et magnis dis parturient.',
+        title: 'University Prep',
+        link: '/university-prep?activeTab=0',
+        // link: '/',
+        description: "From the world's top 50 universities to scholarship architecture and visa precision — a complete preparation system that turns ambition into acceptance letters and full-ride awards.",
         cta: 'Learn More',
       },
       {
         links: [
           {
-            title: 'University Guidance',
+            title: 'TOP 50 Universities',
+            mainLink: '/university-prep?activeTab=0',
+            // mainLink: '/',
             subLinks: ['University Selection', 'Application Support', 'Scholarship Guidance']
           },
           {
-            title: 'Expert Mentorship',
+            title: 'University Admissions',
+            mainLink: '/university-prep?activeTab=1',
             subLinks: ['Academic Mentors', 'Industry Professionals', 'Alumni Network']
           },
           {
-            title: 'Career Planning',
+            title: 'Scholarship Support',
+            mainLink: '/university-prep?activeTab=2',
             subLinks: ['Career Assessment', 'Industry Insights', 'Internship Programs']
           },
           {
-            title: 'Success Stories',
+            title: 'Student Visa',
+            mainLink: '/university-prep?activeTab=3',
             subLinks: ['Student Achievements', 'Alumni Testimonials', 'Case Studies']
           },
         ],
@@ -60,30 +69,82 @@ const menuData = {
     ],
   },
 
-  'Why Choose Canska': {
+  'Why Canska': {
     sections: [
       {
-        title: 'Why Choose Canska',
-         link: '/why-canska',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sociis natoque penatibus et magnis dis parturient.',
+        title: 'Why Canska',
+        link: '/why-canska',
+        description: 'Canska is not a school, a tutoring platform, or an academic counselling service. It is a human capital incubator for the next generation of students.',
         cta: 'Learn More',
       },
       {
+
         links: [
           {
-            title: 'Our Approach',
+            title: ' Why Canska?',
+            mainLink: '/why-canska?activeTab=0',
             subLinks: ['Teaching Methodology', 'Personalized Learning', 'Innovation Focus']
           },
           {
-            title: 'Success Rate',
+            title: 'Why Start at Age 8?',
+            mainLink: '/why-canska?activeTab=1',
             subLinks: ['University Acceptance', 'Academic Performance', 'Graduate Outcomes']
           },
           {
-            title: 'Student Testimonials',
+            title: 'Why Portfolio?',
+            mainLink: '/why-canska?activeTab=2',
             subLinks: ['Current Students', 'Alumni Reviews', 'Parent Feedback']
           },
           {
-            title: 'Compare Programs',
+            title: 'Portfolio Building',
+            mainLink: '/why-canska?activeTab=3',
+            subLinks: ['Program Comparison', 'Pricing Options', 'Benefits Overview']
+          },
+        ],
+      },
+    ],
+  },
+
+
+  'For Parents': {
+    sections: [
+      {
+        title: 'For Parents',
+        link: '/why-canska',
+        description: 'Parenting is the ultimate long-term investment. This is your map — the strategic value, the real ROI, the admissions insights, the commitments expected, and the workload philosophy that protects childhood while building greatness.',
+        cta: 'Learn More',
+      },
+      {
+
+
+
+
+
+
+        links: [
+          {
+            title: '  The Real ROI',
+            mainLink: '/why-canska',
+            subLinks: ['Teaching Methodology', 'Personalized Learning', 'Innovation Focus']
+          },
+          {
+            title: 'The Strategic Value',
+            mainLink: '/',
+            subLinks: ['University Acceptance', 'Academic Performance', 'Graduate Outcomes']
+          },
+          {
+            title: 'Admissions Insights',
+            mainLink: '/',
+            subLinks: ['Current Students', 'Alumni Reviews', 'Parent Feedback']
+          },
+          {
+            title: 'Parental Commitment',
+            mainLink: '/',
+            subLinks: ['Program Comparison', 'Pricing Options', 'Benefits Overview']
+          },
+          {
+            title: 'Student Workload Policy',
+            mainLink: '/',
             subLinks: ['Program Comparison', 'Pricing Options', 'Benefits Overview']
           },
         ],
