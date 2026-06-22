@@ -3,128 +3,13 @@ import Image from 'next/image';
 import Breadcrumb from '../Reusable/Breadcrumb';
 import Link from 'next/link';
 import ScrollAnimatedElement from '../Reusable/ScrollAnimatedElement';
+import { featureBlocks } from '@/utilities/constants';
 
 const breadcrumbLinks = [
   { label: 'Home', href: '/' },
   { label: 'The Quad Program', href: '/quad-program' },
 ];
 
-const featureBlocks = [
-  {
-    id: '01',
-    title: 'The Vision of Early Excellence',
-    subtitle: 'Canska introduces the world\'s first 12-year scholarship incubation program for students starting at age eight.',
-    description: 'By shifting the focus from high-stress, eleventh-hour admission applications to a decade-long progression of strategic growth, the Quad Program prepares students for the world\'s Top 50 universities. This longitudinal approach ensures that every student builds an "unignorable" portfolio. By prioritizing systematic mentorship and professional assessments, Canska transforms childhood curiosity into a significant financial asset, effectively eliminating the need for future student loans, removing uncertainty, and reducing long-term parental stress.'
-  },
-  {
-    id: '02',
-    title: 'Understanding the Quad Structure',
-    subtitle: 'The Quad Program is logically divided into four separate three-year phases: Seekers, Makers, Risers, and Flyers.',
-    description: 'Each phase serves a unique developmental purpose aligned with key cognitive milestones. This structured runway allows students to move beyond traditional rote learning toward genuine mastery and intellectual knowledge. By segmenting the 12-year journey, Canska guarantees that progress is premeditated, measurable, and sustainable. This architecture prevents the common "burnout" seen in competitive schooling by distributing the workload of elite university admissions over a decade of organised, consistent, controllable, and highly focused development.'
-  },
-  {
-    id: '03',
-    title: 'The Seekers Phase: Ages 8, 9, and 10',
-    subtitle: 'Build a robust academic foundation while cultivating distinctive curiosity.',
-    description: 'Students are exposed to a wide variety of lenses, actively identifying latent interests directly aligned with strategic career pathways. This phase is about discovery without the burden of academic pressure. By using targeted gamified structures and interactive frameworks, Canska nurtures natural leanings. This proactive "Spike" identification ensures that future specialization builds on genuine, organic passion—creating a story that feels more authentic rather than "manufactured".'
-  },
-  {
-    id: '04',
-    title: 'The Makers Phase: Ages 11, 12, and 13',
-    subtitle: 'Transition from exploration to tangible skill mastery through deeper subject immersion.',
-    description: 'During these middle years, the program emphasises deeper subject immersion and the pursuit of early achievements. Students begin converting their curiosity into "Proof of Work" through structured micro-lessons and projects. This phase bridges the gap between childhood play and professional-grade performance. By documenting these early accomplishments, students establish a verifiable history of commitment, which is an important differentiator when applying to prestigious global universities and high-value scholarships.'
-  },
-  {
-    id: '05',
-    title: 'The Risers Phase: Ages 14, 15, and 16',
-    subtitle: 'Accelerate the unique "Spike" and establish a strong digital presence.',
-    description: 'In these primary high school years, the Quad Program narrows its focus to competitions, innovation, research, leadership, and most importantly measurable impact. Students are driven to take on roles that demonstrate self-initiative and problem-solving within their mastery fields. This phase is significant for strategic positioning, guaranteeing that the student\'s portfolio aligns perfectly with competitive university criteria. The objective is to move beyond being a high-achiever to becoming a recognised leader in a very specific niche.'
-  },
-  {
-    id: '06',
-    title: 'The Flyers Phase: Ages 17, 18, and 19',
-    subtitle: 'Execute the high-stakes admissions and scholarship procurement.',
-    description: 'During these final years, students package a decade of growth into a world-class portfolio. The focus remains on refining leadership narratives and ensuring all achievements are verifiable and high-impact. Canska mentors guide students through the complexities of international university applications, leveraging the "unignorable" history built since age eight. The ultimate objective of this phase is securing scholarships ranging from US$60,000 to $40,000, guaranteeing a debt-free transition from high school into elite global higher education institutions.'
-  },
-  {
-    id: '07',
-    title: 'Harnessing Volumetric Microlearning',
-    subtitle: '10-minute lessons that fit seamlessly into existing routines.',
-    description: 'At the heart of the Quad Program is the principle of volumetric microlearning. This high-frequency, low-friction lesson system leverages consistent bursts of learning to yield massive cumulative knowledge over 12 years. By breaking very complex subjects into digestible units, Canska maintains student engagement and prevents content fatigue. This scientifically grounded approach ensures that learning is not a difficult chore but a manageable practice, empowering the steady accumulation of skills across 24 major and minor lesson verticals each year.'
-  },
-  {
-    id: '08',
-    title: 'Balancing Major and Minor Lesson Verticals',
-    subtitle: '12 major and 12 minor lesson verticals for every age group.',
-    description: 'Students are required to choose three mandatory major and three minor lessons every day from a massive lesson pool. This dual-track system ensures that while a student hones their primary "Spike", they also maintain a broad, interdisciplinary perspective. This breadth of knowledge is highly valued by top-tier universities, as it demonstrates intellectual flexibility. The aptitude to pivot between core subjects and supplementary topics fosters a well-rounded yet specialised profile.'
-  },
-  {
-    id: '09',
-    title: 'The Power of Student Autonomy',
-    subtitle: 'Total freedom in lesson selection within the marketplace ecosystem.',
-    description: 'Unlike traditional education models with fixed paths, the Quad Program is non-linear and student-directed. This autonomy reduces educational fatigue and sustains long-term motivation. When a student chooses their own learning path, every click reflects genuine intent, providing cleaner data for talent assessment. By following their learning curiosity, students become self-directed learners who take ownership of their academic journey, a quality that is important for success in rigorous university environments.'
-  },
-  {
-    id: '11',
-    title: 'Active Scaffolding and Predictive Nudges',
-    subtitle: 'AI-powered "Skill Nudges" connect passions to weak subjects.',
-    description: 'If a student evades mathematics but loves space, the system presents maths through the lens of rocketry mechanics. This technique uses a student\'s existing passions to connect the skill gaps to more difficult concepts, rebuilding confidence and reducing frustration. By Level 3 (Mastery), these nudges become more interdisciplinary, guiding students to recognise patterns across arts, maths, science, and humanities. This approach ensures that no subject becomes a permanent barrier to the student\'s overall development and mastery.'
-  },
-  {
-    id: '12',
-    title: 'The Hybrid Assessment Model',
-    subtitle: 'A sophisticated blend of artificial intelligence and human mentorship.',
-    description: 'AI provides immediate, data-driven pulse reports on assessments, while human mentors provide contextual understanding and qualitative guidance. This dual-layered approach safeguards students receive both swiftness and depth in their feedback. Mentors help students understand the "why" behind their mistakes, fostering empathy and suppleness. This hybrid model guarantees that every assessment is a developmental instrument rather than a high-stakes assessment obstacle, prioritising the student\'s emotional and intellectual growth over a decade.'
-  },
-  {
-    id: '13',
-    title: 'Rethinking Mistakes and Failures',
-    subtitle: 'A low-pressure, growth-oriented environment without "failure".',
-    description: 'Incorrect responses are viewed as valuable learning prospects rather than big setbacks. Students are encouraged to engage with their mistakes very constructively, using them as stepping stones toward deeper understanding. Both the AI and human mentors identify and explain mistakes clearly, helping students avoid similar mistakes in the future. By removing the fear of penalty, Canska fosters a confident, resilient mindset that values the learning process over correct answers and perfect scores.'
-  },
-  {
-    id: '14',
-    title: 'Diversity in Assessment Formats',
-    subtitle: 'Submit expressive responses via text, images, audio, or video.',
-    description: 'To cater to different learning styles, the Quad Program utilises assorted assessment formats. Beyond multiple-choice and short-answer questions, students could submit expressive responses via text, images, audio, or video uploads. This flexibility permits learners to articulate their understanding using their personal strengths, whether they are visual, verbal, or creative. This multimodal feedback loop ensures that the system captures an accurate reflection of the student\'s comprehension.'
-  },
-  {
-    id: '15',
-    title: 'The Quad Score for Parents',
-    subtitle: 'A dynamic dashboard reflecting long-term patterns rather than static grades.',
-    description: 'Parents can monitor their child\'s development through a dynamic "Quad Score" on a personalised dashboard. Unlike traditional grades that offer a stationary snapshot of performance, the Quad Score reflects long-term patterns in learning, engagement, and improvement. It is divided across various sections, providing a detailed view of where a student consistently excels over time. This transparency empowers parents to stay meaningfully involved without the heaviness of school-style examinations. The score serves as a data-driven growth map, highlighting the formation of the student\'s "Spike".'
-  },
-  {
-    id: '16',
-    title: 'Life Skills Beyond the Classroom',
-    subtitle: 'Crucial life skills, digital presence, and self-sufficient leadership.',
-    description: 'While securing scholarships is a key objective, the Quad Program is equally committed to teaching crucial life skills. Students learn "life mechanics", digital presence, and self-sufficient leadership throughout their 12-year program period. These proficiencies are designed to shape them for the rest of their lives, ensuring they are prepared for the professional world. By fostering critical thinking, resilience, and adaptability, Canska guarantees that students are not just successful applicants but very confident, high-functioning individuals capable of navigating an ever-changing global landscape.'
-  },
-  {
-    id: '17',
-    title: 'Building an Unignorable Portfolio',
-    subtitle: '12 years of consistent, documented growth and achievement.',
-    description: 'A crucial differentiator of the Quad Program is the creation of a longitudinal portfolio that serves as "Proof of Work". Most university admissions officers find it impossible to ignore a student who could demonstrate 12 years of consistent, documented growth and achievement. This portfolio is not just a resume; it is a core narrative of persistence and "Spike" mastery. By prioritising the documentation of projects, reflections, and assessments since age eight, Canska guarantees that every student stands out as a unique, high-value candidate.'
-  },
-  {
-    id: '18',
-    title: 'Managing Global Admissions Criteria',
-    subtitle: 'An agile model adapting to evolving global admissions criteria.',
-    description: 'Whether universities shift to test-optional policies or change their focus toward specific leadership traits, Canska\'s "Spike" mastery remains relevant. The program safeguards that a student\'s skills are highly portable across international borders, preparing them for top-tier institutions in the USA, UK, and beyond. This adaptability is powered by AI that monitors global trends, guaranteeing that the content marketplace and mentorship strategies of Canska are always at the cutting edge of global educational standards.'
-  },
-  {
-    id: '19',
-    title: 'Financial Independence for Parents',
-    subtitle: 'Eliminating student loans through full-ride scholarship engineering.',
-    description: 'The financial impact of the Quad Program is transformative for parents. By targeting scholarships ranging from US$60,000 to $400,000 full-ride awards, Canska aims to completely eliminate the necessity for student loans. This strategic financial planning reduces the immense stress often associated with elite higher education. The program essentially treats a student\'s talent as a capital fund, where small daily investments in learning yield considerable returns in the form of debt-free education at some of the world\'s most prestigious top 50 universities and colleges.'
-  },
-  {
-    id: '20',
-    title: 'A Future of Reflective Leaders',
-    subtitle: 'Self-directed, philosophical, and confident global leaders.',
-    description: 'Ultimately, the Quad Program prepares students to be self-directed, philosophical, and confident leaders. By fostering a philosophy of continuous development, curiosity, and "unlearning" out-of-date perspectives, Canska prepares the next generation to solve complex global problems. Students learn that learning is a lifelong expedition, not a destination. They graduate from the Quad program not only with admission offers and scholarships but with a profound understanding of their own personal potential, ready to contribute meaningfully to the world with resilience, intellectual depth, and mastery.'
-  }
-];
 
 const QuadProgram = () => {
   return (
