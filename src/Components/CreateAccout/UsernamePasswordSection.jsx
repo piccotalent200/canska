@@ -7,6 +7,7 @@ import FormField from "./FormField";
 const inputBase = "w-full h-[46px] px-4 bg-white border rounded-xl outline-hidden text-sm leading-[18px] font-normal placeholder:text-[#9CA3AF] transition-all duration-300";
 const inputNormal = "border-[#6F2DAE26] hover:border-[#6F2DAE] focus:border-[#6F2DAE] focus:shadow-[0px_1px_2px_2px_#0000000D]";
 const inputError = "border-[#F5070B] hover:border-[#F5070B] focus:border-[#F5070B] focus:shadow-[0px_1px_2px_2px_#F5070B33]";
+const inputDisabled = "bg-[#6F2DAE0D] border border-dashed border-[#6F2DAE40] rounded-xl p-6 md:p-[34px_40px]";
 
 const UsernamePasswordSection = ({
   username, setUsername,
@@ -29,7 +30,7 @@ const UsernamePasswordSection = ({
 
   const usernameMatch = retypeUsername && username === retypeUsername;
   const usernameNoMatch = retypeUsername && username !== retypeUsername;
-  const passwordMatch = retypePassword && password === retypePassword;
+  const passwordMatch = retypePassword && password === retypePassword;  
   const passwordNoMatch = retypePassword && password !== retypePassword;
 
   const emailValid = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/.test(email);

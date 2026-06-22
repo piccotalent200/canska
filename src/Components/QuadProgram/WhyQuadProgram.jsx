@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import Breadcrumb from '../Reusable/Breadcrumb';
 import Link from 'next/link';
+import ScrollAnimatedElement from '../Reusable/ScrollAnimatedElement';
 
 const breadcrumbLinks = [
   { label: 'Home', href: '/' },
@@ -136,19 +137,23 @@ const WhyQuadProgram = () => {
           <div className="max-w-[852px] flex flex-col gap-[20px]">
 
             {/* Subtitle / Tagline */}
-            <span className="text-[#FFB433] text-sm font-bold tracking-[2.42px] uppercase leading-4">
-             — The 12-Year Scholarship Incubator
-            </span>
+            <ScrollAnimatedElement delay={0.1}>
+              <span className="text-[#FFB433] text-sm font-bold tracking-[2.42px] uppercase leading-4">
+               — The 12-Year Scholarship Incubator
+              </span>
+            </ScrollAnimatedElement>
 
-            {/* Main Heading */}
-            <h1 className="text-white text-5xl md:text-[64px] font-extrabold leading-[64px] tracking-[-1.6px]">
-              Why <span className="text-[#FFB433]">“Quad”</span> Program
-            </h1>
+            <ScrollAnimatedElement delay={0.2}>
+              <h1 className="text-white text-5xl md:text-[64px] font-extrabold leading-[64px] tracking-[-1.6px]">
+                Why <span className="text-[#FFB433]">“Quad”</span> Program
+              </h1>
+            </ScrollAnimatedElement>
 
-            {/* Description Paragraph */}
-            <p className="text-white text-base font-normal leading-6 text-left">
-             The <span className="font-bold">"Quad"</span> program offers a long-term, holistic approach to child development, moving beyond traditional education to prepare children for future success at top universities and in life. It aims to reduce stress and financial burdens for families while preserving the joy of childhood.
-            </p>
+            <ScrollAnimatedElement delay={0.3}>
+              <p className="text-white text-base font-normal leading-6 text-left">
+               The <span className="font-bold">"Quad"</span> program offers a long-term, holistic approach to child development, moving beyond traditional education to prepare children for future success at top universities and in life. It aims to reduce stress and financial burdens for families while preserving the joy of childhood.
+              </p>
+            </ScrollAnimatedElement>
 
           </div>
         </div>
@@ -157,25 +162,27 @@ const WhyQuadProgram = () => {
       <section className="w-full p-[20px_16px_60px_16px] sm:p-[29px_32px_80px_32px] lg:p-[30px_61px_66px] bg-[#FAFAFC]">
 
         {/* Top Banner Image with Rounded Corners and Gradient Overlay */}
-        <div className="relative w-full h-[200px] md:h-[220px] rounded-3xl overflow-hidden mb-[64px]">
-          <Image
-            src="/img/why-quad-program.svg"
-            alt="Graduating students throwing caps against city skyline"
-            fill
-            priority
-            className="object-cover object-center"
-          />
-          {/* Deep Violet Overlay Layer matching the aesthetic */}
-          <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0)),linear-gradient(90deg,rgba(45,11,112,0.85)_0%,rgba(45,11,112,0.55)_50%,rgba(45,11,112,0.15)_100%)] mix-blend-multiply" />
-        </div>
+        <ScrollAnimatedElement delay={0.2}>
+          <div className="relative w-full h-[200px] md:h-[220px] rounded-3xl overflow-hidden mb-[64px]">
+            <Image
+              src="/img/why-quad-program.svg"
+              alt="Graduating students throwing caps against city skyline"
+              fill
+              priority
+              className="object-cover object-center"
+            />
+            {/* Deep Violet Overlay Layer matching the aesthetic */}
+            <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0)),linear-gradient(90deg,rgba(45,11,112,0.85)_0%,rgba(45,11,112,0.55)_50%,rgba(45,11,112,0.15)_100%)] mix-blend-multiply" />
+          </div>
+        </ScrollAnimatedElement>
 
         {/* Feature Blocks Stack */}
         <div className="flex flex-col gap-[20px]">
-          {featureBlocks.map((block) => (
-            <div
-              key={block.id}
-              className="bg-white border border-[#EBEAED] rounded-3xl p-6 md:p-[40px_40px_24px_40px] flex flex-col md:flex-row gap-6 md:gap-10 items-start transition-all duration-300 hover:shadow-md"
-            >
+          {featureBlocks.map((block, index) => (
+            <ScrollAnimatedElement key={block.id} delay={0.1 + index * 0.12}>
+              <div
+                className="bg-white border border-[#EBEAED] rounded-3xl p-6 md:p-[40px_40px_24px_40px] flex flex-col md:flex-row gap-6 md:gap-10 items-start transition-all duration-300 hover:shadow-md"
+              >
               {/* Number Indicator Component */}
               <div className="flex flex-col items-start flex-shrink-0 lg:min-w-[186px] ">
                 <span className="text-[72px] font-[900] text-[#FFB433] leading-[72px] tracking-tight">
@@ -202,7 +209,9 @@ const WhyQuadProgram = () => {
                 </p>
               </div>
 
-            </div>
+              </div>
+
+            </ScrollAnimatedElement>
           ))}
         </div>
 

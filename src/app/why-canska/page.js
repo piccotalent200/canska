@@ -1,11 +1,11 @@
-import WhyCanska from '@/Components/QuadProgram/WhyCanska'
-import React from 'react'
+import WhyChooseCanska from '@/Components/WhyChooseCanska'
+import React, { Suspense } from 'react'
 
 const WhyCanskaPage = () => {
   return (
-   <>
-   <WhyCanska/>
-   </>
+   <Suspense fallback={<div>Loading...</div>}>
+   <WhyChooseCanska />
+   </Suspense>
   )
 }
 

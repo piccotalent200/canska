@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { Dialog, DialogPanel, DialogBackdrop } from '@headlessui/react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 const MobileDrawer = ({ isOpen, onClose, menuData }) => {
   const [activeSubmenu, setActiveSubmenu] = useState(null)
@@ -28,7 +29,7 @@ const MobileDrawer = ({ isOpen, onClose, menuData }) => {
   }
 
   return (
-    <Dialog open={isOpen} onClose={onClose} className="relative z-[200] min-[1051px]:hidden" data-lenis-prevent>
+    <Dialog open={isOpen} onClose={onClose} className="relative z-[200] min-[1100px]:hidden" data-lenis-prevent>
       <DialogBackdrop
         transition
         className="fixed inset-0 bg-black/50 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"
@@ -36,7 +37,7 @@ const MobileDrawer = ({ isOpen, onClose, menuData }) => {
 
       <div className="fixed inset-0 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full md:pl-10">
+          <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full ">
             <DialogPanel
               transition
               className="pointer-events-auto w-screen transform transition duration-300 ease-in-out data-[closed]:translate-x-full sm:duration-700"
@@ -98,14 +99,14 @@ const MobileDrawer = ({ isOpen, onClose, menuData }) => {
                                         className="w-full flex items-center justify-between text-base font-medium text-[#FFFFFF] hover:text-[#FFFFFF]/80 py-2 cursor-pointer sansFlex"
                                       >
                                         <span>{link.title}</span>
-                                        <img
+                                        {/* <img
                                           src="/img/dropdown-arrow-white.svg"
                                           alt="arrow"
                                           className={`w-4 h-4 transition-transform duration-200 ${activeSubLink === link.title ? 'rotate-180' : ''}`}
-                                        />
+                                        /> */}
                                       </button>
 
-                                      <div className={`overflow-hidden transition-all duration-300 ${activeSubLink === link.title ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+                                      {/* <div className={`overflow-hidden transition-all duration-300 ${activeSubLink === link.title ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                                         <ul className="ml-4 mt-2 space-y-1">
                                           {link.subLinks.map((subLink, subIndex) => (
                                             <li key={subIndex}>
@@ -115,7 +116,7 @@ const MobileDrawer = ({ isOpen, onClose, menuData }) => {
                                             </li>
                                           ))}
                                         </ul>
-                                      </div>
+                                      </div> */}
                                     </li>
                                   ))}
                                 </ul>
@@ -126,6 +127,62 @@ const MobileDrawer = ({ isOpen, onClose, menuData }) => {
                       </div>
                     </div>
                   ))}
+
+
+                  <div>
+                    <button
+                      onClick={() => handleSubmenuClick("more")}
+                      className="w-full flex items-center justify-between p-4 text-left text-base font-medium text-[#FFFFFF] hover:bg-[#ffffff]/10 cursor-pointer sansFlex"
+                    >
+                      <span>More</span>
+                      <img
+                        src="/img/dropdown-arrow-white.svg"
+                        alt="arrow"
+                        className={`transition-transform duration-200 ${activeSubmenu === "more" ? 'rotate-180' : ''}`}
+                      />
+                    </button>
+
+                    {/* Submenu Content */}
+                    <div className={`overflow-hidden transition-all duration-300 ${activeSubmenu === "more" ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+                      <div className="bg-[#5E17EB]/10 px-4 space-y-4">
+                        <div className="pb-4 border-b border-[#FFFFFF]/20 last:border-b-0">
+                          <ul className="space-y-2">
+                            <li>
+                              <Link href="/"
+                                className="w-full flex items-center justify-between text-base font-medium text-[#FFFFFF] hover:text-[#FFFFFF]/80 py-2 cursor-pointer sansFlex"
+                              >
+                                FAQs
+                              </Link>
+                              <Link href="/"
+                                className="w-full flex items-center justify-between text-base font-medium text-[#FFFFFF] hover:text-[#FFFFFF]/80 py-2 cursor-pointer sansFlex"
+                              >
+                                Blog
+                              </Link>
+                              <Link href="/"
+                                className="w-full flex items-center justify-between text-base font-medium text-[#FFFFFF] hover:text-[#FFFFFF]/80 py-2 cursor-pointer sansFlex"
+                              >
+                                Contact us
+                              </Link>
+
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <Link href="/"
+                    className="w-full flex items-center justify-between p-4 text-left text-base font-medium text-[#FFFFFF] hover:bg-[#ffffff]/10 cursor-pointer sansFlex"
+                  >
+                    Add-Ons
+                  </Link>
+
+                  <Link href="/"
+                    className="w-full flex items-center justify-between p-4 text-left text-base font-medium text-[#FFFFFF] hover:bg-[#ffffff]/10 cursor-pointer sansFlex"
+                  >
+                    About
+                  </Link>
                 </div>
 
                 {/* Mobile Action Buttons */}

@@ -117,7 +117,7 @@ const HeroComponent = () => {
 
     return (
         <section>
-            <div className='relative overflow-hidden w-full min-h-wrap'>
+            <div className='relative overflow-hidden w-full min-h-screen'>
 
                 {/* Background Video Element */}
                 <video
@@ -126,7 +126,7 @@ const HeroComponent = () => {
                     muted
                     playsInline
                     poster="/img/hero-banner-image.svg" /* Fallback image while video loads */
-                    className="top-0 left-0 w-full h-full object-cover z-0"
+                    className="top-0 left-0 w-full h-full object-fill z-0"
                 >
                     <source src="/video/canska-video.mp4" type="video/mp4" />
                     {/* Add fallback sources here if you have .webm formats */}
@@ -235,7 +235,7 @@ const HeroComponent = () => {
             </div>
 
             <div className='p-[0_16px_0px] sm:p-[0_32px_0px] lg:p-[0_61px_0px] bg-[#FAF8F3]'>
-                <div className='bg-[#FAF8F3] relative z-10 -top-[30px] sm:-top-[40px] lg:-top-[47px] rounded-[16px] p-[30px_16px_50px_16px] sm:p-[40px_16px_60px_20px] lg:p-[50px_16px_84px_27px]'>
+                <div className='bg-[#FAF8F3] relative z-10 rounded-[16px] p-[30px_16px_50px_16px] sm:p-[40px_16px_60px_20px] lg:p-[50px_16px_84px_27px]'>
 
                     <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-x-[12px] gap-y-[20px] lg:gap-y-0 items-end mb-[32px] sm:mb-[40px] lg:mb-[52px]">
                         <ScrollAnimatedElement delay={0.2}>
