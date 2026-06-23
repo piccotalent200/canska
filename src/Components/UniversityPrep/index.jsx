@@ -35,6 +35,7 @@ const UniversityPrep = () => {
     }, [urlTab]);
 
     const handleTabChange = (index) => {
+        console.log(index,"index123");
         setActiveTab(index);
 
         const params = new URLSearchParams(searchParams.toString());
