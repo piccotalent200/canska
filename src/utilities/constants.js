@@ -795,7 +795,7 @@ export const universityData = [
         "rank": "02",
         "name": "Imperial College London",
         "url": "https://www.imperial.ac.uk",
-        "logoSrc": "/img/Imperial-College-London.jpg",
+        "logoSrc": "/img/Imperial-College-London.JPG",
         "highlight": "Imperial College London has risen to become one of the world’s leading universities through its intense focus on STEMB disciplines, encompassing Science, Technology, Engineering, Medicine, and Business.",
         "description": "It is a key destination for high achieving school students pursuing prestigious awards such as the Imperial President’s Scholarship, which provides substantial tuition support and research funding. Portfolios submitted to Imperial must demonstrate strong industrial relevance and transnational research potential. Successful applicants naturally showcase a deep academic and practical focus within a specialised field such as renewable energy, artificial intelligence, or biomedical engineering. The university’s location in London offers exceptional global networking opportunities, making evidence of internships, collaborative projects, or research partnerships with worldwide organisations particularly valuable. Admissions officers seek students who combine sustained academic excellence with an articulated ambition to create research driven impact on industries and the global economy."
     },
@@ -813,7 +813,7 @@ export const universityData = [
         "rank": "04",
         "name": "University of Oxford",
         "url": "https://www.ox.ac.uk",
-        "logoSrc": "/img/University-of-Oxford.jpg",
+        "logoSrc": "/img/university-of-oxford.jpg",
         "highlight": "University of Oxford represents the pinnacle of tutorial based enquiry and traditional academic rigour.",
         "description": "For students pursuing prestigious scholarship opportunities such as the Clarendon Fund or the Rhodes Scholarship, a portfolio should emphasise primary research, intellectual depth, and advanced subject mastery. Unlike the broader college admissions model commonly associated with countless American universities, Oxford strongly rewards applicants who demonstrate an exceptional academic “spike” within a single discipline. Competitive portfolios often include evidence of high level debating, published academic work, original research projects, or outstanding performance in internationally recognised Olympiads and competitions. Admissions decisions are heavily influenced by the interview process, where students are evaluated on their capability to think critically, respond analytically, and engage in sophisticated academic dialogue. As a result, student portfolios that include reflection on independent reading, detailed research explorations, or a substantial project or thesis are particularly highly valuable. Obtaining a high-value scholarship eventually requires demonstrating the potential to become a future world class academic capable of producing independent and groundbreaking research within a chosen field."
     },
@@ -822,7 +822,7 @@ export const universityData = [
         "rank": "05",
         "name": "Harvard University",
         "url": "https://www.harvard.edu",
-        "logoSrc": "/img/Harvard-University.jpg",
+        "logoSrc": "/img/harvard-university.jpg",
         "highlight": "Harvard University continues to define universal leadership and institutional prestige on a global scale.",
         "description": "As a need-blind institution for all applicants, including international students, Harvard can provide financial aid packages that exceed US$350,000 for students with demonstrated need. A competitive Harvard portfolio must communicate transformative potential and a very clear capacity for future impact. The admissions committee consistently seeks students who show the potential to reshape fields such as politics, science, business, technology, or the arts through originality, leadership, and intellectual influence. Strong portfolios often demonstrate citizen leadership by presenting tangible contributions to local, national, or global communities. Harvard also places very significant value on diversity of thought, intellectual courage, and a willingness to challenge conventional ideas. For students aiming to secure high value scholarships and financial support, the overall narrative of the portfolio should connect a distinct academic or extracurricular “spike” with a captivating theory of change, clearly explaining how a Harvard education will enable the student to address a major global challenge with long-term impact."
     },
@@ -831,7 +831,7 @@ export const universityData = [
         "rank": "06",
         "name": "University of Cambridge",
         "url": "https://www.cam.ac.uk",
-        "logoSrc": "/img/University-of-Cambridge.jpg",
+        "logoSrc": "/img/university-of-cambridge.jpg",
         "highlight": "University of Cambridge is globally renowned for its collegiate system and its enduring commitment to real scholarly excellence.",
         "description": "For students pursuing prestigious funding opportunities, the Gates Cambridge Scholarship remains one of the distinguished postgraduate awards in the world, while undergraduate applicants often compete for selective college specific scholarships and bursaries. A strong Cambridge portfolio should emphasise academic focus, intellectual rigour, and sustained excellence within a specialised discipline. Unlike institutions that prioritise broad extracurricular profiles, Cambridge places greater value on academic intensity and evidence of deep subject mastery. Competitive applicants frequently establish success within highly demanding curricula such as the International Baccalaureate (IB) or Advanced Placement (AP) programmes, alongside exceptional performance in international Olympiads, research competitions, or advanced academic projects. Portfolios that disclose a profound and sustained engagement with major subjects such as theoretical physics, mathematics, philosophy, or classical history are particularly compelling to Cambridge academics and admissions tutors. High value scholarship opportunities are typically awarded to students who can convincingly demonstrate that they possess the potential to become global leaders within their chosen academic field."
     },
@@ -849,7 +849,7 @@ export const universityData = [
         "rank": "08",
         "name": "National University of Singapore (NUS)",
         "url": "https://www.nus.edu.sg",
-        "logoSrc": "/img/National-University-of-Singapore.jpg",
+        "logoSrc": "/img/national-university-of-singapore.jpg",
         "highlight": "National University of Singapore has solidified its position as Asia’s leading global university, widely recognised for its distinctive global Asian perspective.",
         "description": "For students aiming to secure competitive funding such as the ASEAN or Science and Technology Scholarships, which can exceed US$250,000 in support, a portfolio must demonstrate regional leadership and strong technological fluency. The university places particular emphasis on applicants who can evidently bridge Eastern and Western academic and professional methodologies, reflecting NUS’s role as a universal connector institution. Competitive portfolios habitually highlight cross cultural collaboration, entrepreneurial initiatives within Asian countries, or advanced STEM research with strong real world applications. Admissions officers value pragmatic innovation, especially solutions that are scalable, economically viable, and responsive to regional challenges. A particularly strong application will show that the student has already initiated or contributed to a product, research project, or venture addressing a clearly defined societal or industrial problem, as this demonstrates both initiative and the potential for meaningful impact within the university ecosystem and beyond."
     },
@@ -858,7 +858,7 @@ export const universityData = [
         "rank": "09",
         "name": "University College London (UCL)",
         "url": "https://www.ucl.ac.uk",
-        "logoSrc": "/img/University-College-London.jpg",
+        "logoSrc": "/img/university-college-london.jpg",
         "highlight": "University College London is known as “London’s Global University”, distinguished by its strong interdisciplinary approach and commitment to social impact.",
         "description": "For students targeting competitive awards such as the UCL Global Undergraduate Scholarship, a portfolio should demonstrate cosmopolitan engagement and a sustained commitment to global issues. UCL particularly rewards applicants who can meaningfully connect distinct academic fields, such as urban planning and public health, or law and artificial intelligence ethics, into coherent problem solving approaches. Strong portfolios often include evidence of social activism, international volunteering work, community based initiatives, or interdisciplinary research projects with measurable impact or outcomes. The university places high value on disruptive thinking and intellectual independence, especially when directed toward improving core systems and challenging established norms. For high value scholarship consideration, applicants are expected to present themselves as globally minded individuals who will actively contribute to UCL’s diverse academic community. A portfolio that undoubtedly demonstrates engagement with the United Nations Sustainable Development Goals, supported by concrete projects or research, is particularly effective in strengthening scholarship competitiveness."
     },
@@ -877,7 +877,7 @@ export const universityData = [
         "rank": "11",
         "name": "The University of Hong Kong (HKU)",
         "url": "https://www.hku.hk",
-        "logoSrc": "/img/The-University-of-Hong-Kong.jpg",
+        "logoSrc": "/img/the-university-of-hong-kong.jpg",
         "highlight": "The University of Hong Kong serves as a major academic gateway between East and West, with particular strengths in international business, medicine, and architecture.",
         "description": "Its Entrance Scholarships can reach up to US$250,000, covering both tuition and living expenses for highly competitive candidates. To be considered competitive, a student’s portfolio should demonstrate strong academic versatility alongside evidence of global networking and cross-border engagement. The university values applicants who have participated in various international exchange programmes, global competitions, or collaborative initiatives that span multiple countries and cultural contexts. A strong application reflects a transnational mindset, showing the aptitude to operate effectively across different national, cultural, and legal environments. For high value scholarship consideration, HKU places emphasis on a clear leadership spike in extracurricular activities that demonstrate measurable impact or outcome in the Asia-Pacific region. Additional advantages are given to applicants who validate bilingual or multilingual proficiency, particularly when paired with meaningful engagement in Asian markets, policy issues, or community focused initiatives."
     },
@@ -886,7 +886,7 @@ export const universityData = [
         "rank": "12",
         "name": "Nanyang Technological University (NTU)",
         "url": "https://www.ntu.edu.sg",
-        "logoSrc": "/img/Nanyang-Technological-University.jpg",
+        "logoSrc": "/img/nanyang-technological-university.jpg",
         "highlight": "Nanyang Technological University is internationally recognised for its leadership in engineering innovation and sustainability research.",
         "description": "Its Nanyang Scholarship is among the most generous in Asia, often providing a full tuition and living expenses package for outstanding students. A good NTU applicant portfolio should strongly emphasise technical creativity and environmental stewardship, reflecting the university’s focus on real world problem solving. NTU particularly values “makers” and applied thinkers who use technology to address pressing global challenges such as climate change, urban planning, and sustainable infrastructure. Strong applications typically include design thinking projects, green technology prototypes, or substantive STEM research with demonstrable outcomes. The university also places importance on digital literacy and adaptableness, particularly in rapidly developing technological fields. For scholarship consideration, a standout portfolio will show evidence of leadership in technical teams, with clear documentation of managing a project from ideation through development to final implementation, demonstrating both engineering competence and the capability to execute complex, end to end solutions."
     },
@@ -895,7 +895,7 @@ export const universityData = [
         "rank": "13",
         "name": "The University of Chicago",
         "url": "https://www.uchicago.edu",
-        "logoSrc": "/img/The-University-of-Chicago.jpg",
+        "logoSrc": "/img/the-university-of-chicago.jpg",
         "highlight": "The University of Chicago is defined by intellectual rigour and a deep commitment to inquiry based learning.",
         "description": "Its Odyssey Scholarship programme provides considerable support for high potential students, with awards that can exceed US$400,000 in total value. A strong University of Chicago portfolio should demonstrate unconventional thinking alongside analytical depth, reflecting the institution’s distinctive academic culture. The university is well-known for its imaginative and often challenging essay prompts, and successful applicants typically mirror this creative intellectual spirit in their own work and personal reflections. Competitive portfolios may include evidence of sustained engagement in philosophical debate, advanced social science research, or artistic projects that push beyond traditional disciplinary boundaries. UChicago places particular emphasis on students who are driven by curiosity and the pursuit of ideas for their own sake, often described as “thinkers for thinking’s sake”. For high value scholarship consideration, applicants must show that they will actively contribute to the university’s “Life of the Mind”, participating in and enriching its rigorous, debate oriented academic environment through sustained engagement and original thought."
     },
@@ -904,7 +904,7 @@ export const universityData = [
         "rank": "14",
         "name": "Peking University (PKU)",
         "url": "https://english.pku.edu.cn",
-        "logoSrc": "/img/Peking-University.jpg",
+        "logoSrc": "/img/peking-university.jpg",
         "highlight": "Peking University is widely regarded as a premier institution for humanities and social sciences in China, while also maintaining a rapidly growing reputation in STEM fields.",
         "description": "For international students, programmes such as the Yenching Academy and various government funded scholarships provide comprehensive financial support that can exceed US$150,000. A competitive Peking University portfolio should foreground Sino global relations and strong cultural fluency, reflecting the university’s key emphasis on global engagement with China’s development and international relations. Successful applicants typically demonstrate sustained academic and personal interest in China’s position in the 21st century through Chinese language, research on Chinese history, politics, economics, or Chinese society, and meaningful intercultural experiences. The university places particular value on students who can act as bridges between China and the rest of the world, combining analytical ability with cultural understanding. For scholarship consideration, a strong student portfolio will show long term commitment to understanding Chinese society alongside consistent academic excellence in the applicant’s home education system, supported by evidence of intercultural leadership, research, and a narrative of global engagement."
     },
@@ -913,7 +913,7 @@ export const universityData = [
         "rank": "15",
         "name": "University of Pennsylvania (UPenn)",
         "url": "https://www.upenn.edu",
-        "logoSrc": "/img/University-of-Pennsylvania.jpg",
+        "logoSrc": "/img/university-of-pennsylvania.jpg",
         "highlight": "University of Pennsylvania is known for its philosophy of practical idealism, where Ivy League academic tradition is closely connected with real world application, particularly through institutions such as the Wharton School.",
         "description": "For students pursuing prestigious opportunities such as the Benjamin Franklin Scholars programme and substantial need-based financial aid packages that can exceed US$300,000, a portfolio should clearly demonstrate entrepreneurial impact and interdisciplinary capabilities. UPenn values applicants who actively apply their knowledge within the “marketplace of ideas”, transforming academic interests into actual outcomes. Strong student portfolios often include evidence of business ventures, policy research, social enterprises, community based initiatives, or innovative projects that bridge multiple disciplines. Admissions officers frequently seek what may be described as the “professional scholar”, a student capable of excelling in both intellectual and professional environments. For high value scholarship and aid consideration, applicants must demonstrate that they are already emerging as high impact leaders who have created measurable influence within their chosen field through strategic thinking and execution."
     },
@@ -922,7 +922,7 @@ export const universityData = [
         "rank": "16",
         "name": "Cornell University",
         "url": "https://www.cornell.edu",
-        "logoSrc": "/img/Cornell-University.jpg",
+        "logoSrc": "/img/cornell-university.jpg",
         "highlight": "Cornell University is distinguished by its “Any Person, Any Study” philosophy, offering one of the broadest academic ecosystems in the world, spanning disciplines from hotel administration to theoretical physics.",
         "description": "Through its need blind admissions and generous financial aid policies, Cornell could provide funding packages exceeding US$350,000 for qualified applicants. A competitive Cornell portfolio should clearly demonstrate both intellectual breadth and a clearly defined area of deep expertise. The university places strong emphasis on applied research and experiential learning, rewarding students who take major academic concepts beyond the classroom and test them in practical environments. Whether in agricultural innovation, hospitality leadership, architecture, sustainability, or advanced engineering, strong portfolios consistently showcase hands on excellence and proof of real world implementation. Cornell also highly values grit, resilience, and engagement across both rural and urban contexts, reflecting its land grant heritage and interdisciplinary culture. For merit based recognition and high value institutional scholarships, applicants benefit from presenting substantial capstone style projects, such as sustainable green farming systems, social innovation initiatives, or technically sophisticated design and engineering work that demonstrates long term commitment, creativity, and measurable impact."
     },
@@ -931,7 +931,7 @@ export const universityData = [
         "rank": "17",
         "name": "Tsinghua University",
         "url": "https://www.tsinghua.edu.cn/en",
-        "logoSrc": "/img/Tsinghua-University.jpg",
+        "logoSrc": "/img/tsinghua-university.jpg",
         "highlight": "Tsinghua University is widely regarded as China’s “Silicon Valley University”, holding a global reputation for excellence in engineering, computer science, and technological innovation.",
         "description": "Prestigious programmes such as the Schwarzman Scholars initiative offer some of the world’s most well-funded fellowships, with aid support usually exceeding US$150,000. A competitive Tsinghua portfolio should present the student as a growing technological visionary with both technical depth and strategic awareness of emerging global trends. Strong applications typically highlight advanced work in fields such as artificial intelligence, quantum computing, semiconductors, robotics, or green energy systems. The university places considerable emphasis on national and international influence, seeking students with the great potential to become future industry leaders, influential researchers, or startup founders within the global technology ecosystem. Successful portfolios often document leadership within technical teams, evidence of innovation driven execution, and a sophisticated understanding of the rapidly evolving global technology landscape. For international students, demonstrating adaptability within China’s high intensity innovation environment is particularly valuable. Evidence of high level coding ability, patented technologies, advanced research contributions, or outstanding achievements in major STEM competitions can significantly strengthen eligibility for admission and scholarship opportunities at Tsinghua University."
     },
@@ -940,7 +940,7 @@ export const universityData = [
         "rank": "18",
         "name": "University of California, Berkeley (UCB)",
         "url": "https://www.berkeley.edu",
-        "logoSrc": "/img/University-of-California-Berkeley.jpg",
+        "logoSrc": "/img/university-of-california-berkeley.jpg",
         "highlight": "University of California, Berkeley is widely recognised as the world’s leading public research university, distinguished by its culture of radical innovation and longstanding tradition of social activism.",
         "description": "Although it is a public institution, Berkeley provides highly prestigious merit based awards such as the Regents’ and Chancellor’s Scholarships for exceptional students. A competitive Berkeley portfolio should demonstrate both social impact and academic originality, reflecting the university’s primary emphasis on intellectual independence and public impact purpose. Berkeley consistently rewards applicants who have challenged most established norms, whether through scientific innovation, policy advocacy, entrepreneurship, or grassroots community organising. Strong portfolios often highlight a clear public mission orientation, showing how a student has used their skills and knowledge to create meaningful benefit for broader communities. Admissions officers place significant value on key intellectual wisdom, especially the willingness to boldly engage with difficult societal, scientific, or ethical questions. For scholarship consideration, highly effective student portfolios frequently document impactful research work or projects, civic initiatives, or large scale social movements that demonstrate measurable influence and sustained leadership. The strongest applicants position themselves as global changemakers who combine elite academic capability with a genuine commitment to advancing the public good."
     },
@@ -949,7 +949,7 @@ export const universityData = [
         "rank": "19",
         "name": "The University of Melbourne",
         "url": "https://www.unimelb.edu.au",
-        "logoSrc": "/img/The-University-of-Melbourne.jpg",
+        "logoSrc": "/img/the-university-of-melbourne.jpg",
         "highlight": "University of Melbourne is Australia’s highest ranked university and is internationally recognised for the “Melbourne Model”, which actively combines broad undergraduate education with later professional specialisation.",
         "description": "Prestigious programmes such as the Hansen Scholarship and the Melbourne Chancellor’s Scholarship can provide support packages exceeding US$200,000 for outstanding students. A competitive Melbourne portfolio should emphasise academic breadth, intellectual curiosity, and a very strong global outlook, reflecting the university’s interdisciplinary educational philosophy. The institution values applicants who can meaningfully connect different fields of study while also demonstrating leadership across diverse environments. Strong portfolios often include evidence of community engagement, multicultural collaboration, and sustained leadership in areas such as social initiatives, student organisations, the arts, athletics, or civic projects. Melbourne particularly seeks well rounded high achievers who combine academic excellence with the ability to contribute positively to broader society. For scholarship consideration, applicants benefit from presenting a portfolio that balances elite classroom performance with considerable involvement beyond academics, particularly where there is strong evidence of initiative, resilience, and influence. High value scholarships are most often awarded to students who obviously demonstrate the potential to become leaders in Australia and the Asia Pacific region."
     },
@@ -958,7 +958,7 @@ export const universityData = [
         "rank": "20",
         "name": "The University of New South Wales (UNSW)",
         "url": "https://www.unsw.edu.au",
-        "logoSrc": "/img/The-University-of-New-South-Wales.jpg",
+        "logoSrc": "/img/the-university-of-new-south-wales.jpg",
         "highlight": "UNSW Sydney is a global powerhouse in engineering, solar energy research, and business innovation, with a strong reputation for producing some of Australia’s most successful technology entrepreneurs and startup founders.",
         "description": "Prestigious opportunities such as the Scientia Scholarship provide substantial funding and mentorship support, with packages that can exceed US$200,000. A competitive UNSW portfolio should demonstrate entrepreneurial drive alongside strong technical excellence, reflecting the university’s emphasis on innovation with real world application. Strong applicants often showcase profitable ventures, engineering prototypes, commercial research projects, or scalable technology solutions developed through independent or collaborative work. UNSW places significant value on practical problem solving and the ability to translate technical ideas into measurable outcomes. For scholarship consideration, portfolios that include advanced STEM projects, success in business or innovation competitions, or recognised proof of high impact technical leadership are particularly compelling. The university aggressively seeks future ready students who are already contributing to the development of emerging technologies and industries. A strong industry connected profile, including global internships, startup experience, research collaborations, or partnerships with corporate organisations, is highly beneficial when competing for scholarship awards at UNSW Sydney."
     },
@@ -968,7 +968,7 @@ export const universityData = [
         "rank": "21",
         "name": "Yale University",
         "url": "https://www.yale.edu",
-        "logoSrc": "/img/Yale-University.jpg",
+        "logoSrc": "/img/yale-university.jpg",
         "highlight": "Yale University is often regarded as the quintessential American liberal arts Ivy League institution, celebrated for its emphasis on creative expression, civic engagement, and intellectual exploration across disciplines.",
         "description": "As a need blind university for all applicants, including international students, Yale offers some of the most generous financial aid packages in the world, with full support that can exceed US$400,000 for students with demonstrated need. A competitive Yale portfolio must communicate humanistic depth and a clear sense of intellectual and personal individuality. The admissions committee seeks the “scholar citizen”, a student who actively combines academic excellence with meaningful involvement in areas such as the arts, activism, public service, or creative leadership. Strong portfolios typically move beyond listing achievements and instead demonstrate reflective leadership, showing how the applicant has influenced ideas, communities, or cultural conversations. Yale places particular importance on originality of voice, intellectual authenticity, and the capability to engage deeply with social and human questions. For students aiming to stand out in Yale’s highly competitive global applicant pool and secure high value financial aid, portfolios that include substantial creative capstone projects, long term community justice initiatives, or deeply personal intellectual explorations are especially compelling."
     },
@@ -986,7 +986,7 @@ export const universityData = [
         "rank": "23",
         "name": "Technical University of Munich (TUM)",
         "url": "https://www.tum.de/en",
-        "logoSrc": "/img/Technical-University-of-Munich.jpg",
+        "logoSrc": "/img/technical-university-of-munich.jpg",
         "highlight": "Technical University of Munich (TUM) is generally recognised as Germany’s leading entrepreneurial university, with global strengths in automotive engineering, aerospace, robotics, and digital technology.",
         "description": "To secure competitive merit based grants and industry sponsored scholarships, a student’s portfolio should clearly demonstrate industrial aptitude and strong technical discipline. TUM values a distinctly professional and core innovation driven mindset, rewarding applicants who combine engineering precision with practical execution and long term problem solving capability. Strong portfolios frequently highlight internships or collaborative work with major international firms such as BMW, Siemens, Airbus, or Bosch, alongside advanced technical certifications, research work experience, and substantial engineering projects. The university places particular emphasis on systems thinking, seeking students who fully understand how technology interacts with industry, society, infrastructure, and economic development. For scholarship consideration, portfolios that document successful technology transfer initiatives, entrepreneurial engineering ventures, or key achievements in international STEM competitions are especially compelling. While not always mandatory, evidence of German language proficiency can significantly strengthen an applicant’s alignment with local industry ecosystems and increase competitiveness for regional scholarships and research opportunities."
     },
@@ -995,7 +995,7 @@ export const universityData = [
         "rank": "24",
         "name": "Johns Hopkins University (JHU)",
         "url": "https://www.jhu.edu",
-        "logoSrc": "/img/Johns-Hopkins-University.jpg",
+        "logoSrc": "/img/johns-hopkins-university.jpg",
         "highlight": "Johns Hopkins University is globally recognised as a leader in public health, medicine, biomedical research, and international relations, supported by one of the largest research budgets in higher education.",
         "description": "Through its generous financial aid policies and extensive institutional resources, funding packages for eligible students can exceed US$400,000 over the course of study. A competitive Johns Hopkins portfolio should strongly emphasise research excellence and data driven problem solving, reflecting the university’s rigorous analytical culture. Successful applicants typically showcase original laboratory research, clinical shadowing experiences, public policy analysis, epidemiological studies, or global health initiatives with measurable outcomes. The institution values inquiry paired with perceptible impact, seeking students who can translate intellectual curiosity into key contributions that improve human wellbeing or address major humanity challenges. For scholarship consideration, portfolios that include published academic papers, advanced independent research, or substantial involvement in medical, scientific, or political project works are particularly compelling. Johns Hopkins also looks for proof of long-term resilience, discipline, and sustained academic intensity, favouring applicants who demonstrate the ability to thrive within its demanding academic environment while producing real world contributions."
     },
@@ -1013,7 +1013,7 @@ export const universityData = [
         "rank": "26",
         "name": "Princeton University",
         "url": "https://www.princeton.edu",
-        "logoSrc": "/img/Princeton-University.jpg",
+        "logoSrc": "/img/princeton-university.jpg",
         "highlight": "Princeton University is distinguished by its strong undergraduate focus and the central role of the senior thesis, making it one of the most academically intensive Ivy League institutions.",
         "description": "It is need blind for all applicants, including international students, and it’s no loan financial aid policy can result in support packages that approach US$400,000 for eligible students. A competitive Princeton portfolio should clearly demonstrate pure intellectual curiosity and a sustained commitment to independent examination. The university seeks “the independent researcher”, a student who engages deeply with ideas through long-form essays, original mathematical or scientific exploration, historical analysis, or other rigorous forms of scholarly investigation. Princeton also places strong emphasis on service, reflected in its guiding principle of “In the Nation’s Service and the Service of Humanity”, encouraging applicants to connect intellectual work with wide-ranging civic responsibilities. For high value scholarship and admission consideration, the strongest student portfolios show evidence of post graduate level independent research capability combined with a clear orientation, demonstrating both academic depth and a commitment to using knowledge in service of country."
     },
@@ -1022,7 +1022,7 @@ export const universityData = [
         "rank": "27",
         "name": "McGill University",
         "url": "https://www.mcgill.ca",
-        "logoSrc": "/img/McGill-University.jpg",
+        "logoSrc": "/img/mcgill-university.jpg",
         "highlight": "McGill University is often referred to as the “Harvard of the North”, with internationally recognised strengths in medicine, law, engineering, math, and the sciences.",
         "description": "Its Major Entrance Scholarships can reach up to US$60,000 yearly and may include additional tuition support for exceptional international students. A competitive McGill portfolio should emphasise global resilience and sustained academic rigour, reflecting the university’s demanding and highly international learning environment. McGill places strong value on grit and adaptability, particularly in students who can thrive within Montreal’s bilingual and culturally diverse environment. Strong applications typically highlight bilingual proficiency in English and French, advanced research capability, and meaningful community leadership experience. The university is very interested in applicants who demonstrate the profile of a global polymath, combining excellence across multiple domains while maintaining depth in a fundamental academic focus. For scholarship consideration, portfolios that show sustained commitment to social justice initiatives, scientific innovation, or globally oriented project work are particularly compelling. Ultimately, McGill seeks high achieving global minded students who can contribute to both its academic excellence and its university campus culture."
     },
@@ -1040,7 +1040,7 @@ export const universityData = [
         "rank": "29",
         "name": "University of Toronto (U of T)",
         "url": "https://www.utoronto.ca",
-        "logoSrc": "/img/University-of-Toronto.jpg",
+        "logoSrc": "/img/university-of-toronto.jpg",
         "highlight": "University of Toronto (U of T) is Canada’s leading research university, internationally recognised for its strengths in artificial intelligence, medicine, and urban studies.",
         "description": "Its Lester B. Pearson International Scholarship is among the prestigious undergraduate awards internationally, offering a full-ride that covers tuition, books, incidental fees, residence, food, and travel expenses. A competitive University of Toronto portfolio should clearly demonstrate exceptional leadership and sustained community impact, reflecting the university’s emphasis on students who have meaningfully influenced their schools or wider communities. The institution values original thinking, particularly when applicants take familiar problems and develop innovative, contextually grounded solutions. Strong portfolios often highlight projects that combine academic insight with practical implementation, such as social enterprises, research driven initiatives, or community based interventions with measurable outcomes. U of T places significant importance on global diversity and cross cultural understanding, seeking students who can contribute to its very diverse international academic environment. For scholarship consideration, the most compelling applications typically present evidence of a high impact capstone project or sustained leadership initiative, fully supported by strong academic achievement, and a clear trajectory toward becoming a future global leader capable of creating scalable and meaningful change."
     },
@@ -1049,7 +1049,7 @@ export const universityData = [
         "rank": "30",
         "name": "Fudan University",
         "url": "https://www.fudan.edu.cn/en",
-        "logoSrc": "/img/Fudan-University.jpg",
+        "logoSrc": "/img/fudan-university.jpg",
         "highlight": "Fudan University is generally recognised as one of China’s leading liberal arts and research universities, with a strong international academic environment and growing global influence.",
         "description": "For international students, scholarship opportunities such as the Shanghai Government Scholarship and Fudan’s own merit based awards provide significant financial support for highly competitive applicants. A strong Fudan portfolio should focus on economic and cultural diplomacy, reflecting the university’s emphasis on China’s integration within international systems. Successful applicants typically demonstrate a sustained interest in China’s global role through academic research, language proficiency in Mandarin, and meaningful engagement with cross border or intercultural collaboration. The university particularly values what may be described as the cosmopolitan scholar, an individual who can function effortlessly across cultural, economic, and intellectual frameworks. For scholarship consideration, portfolios that include prior engagement with Chinese business environments, cultural institutions, internships, or high level research projects are especially compelling. Applicants who articulate how they will serve as international envoys for Fudan University, contributing to international cooperation, is strongest in securing competitive scholarship offers."
     },
@@ -1058,7 +1058,7 @@ export const universityData = [
         "rank": "31",
         "name": "King's College London (KCL)",
         "url": "https://www.kcl.ac.uk",
-        "logoSrc": "/img/Kings-College-London.jpg",
+        "logoSrc": "/img/kings-college-london.jpg",
         "highlight": "King’s College London is a global leader in war studies, global health, and law, with a strong reputation for research that directly engages with contemporary international challenges.",
         "description": "Its Global Leaders Scholarship clearly targets high potential international students who fully demonstrate both academic excellence and real world impact. A competitive KCL portfolio should very-well demonstrate policy impact and strategic thinking, reflecting the university’s focus on applying rigorous academic insight to pressing global issues. The institution values what might be described as the practical intellectual, someone who is able to bridge theory and application in contexts such as international relations, public health systems, or legal frameworks. Strong portfolios often include evidence of participation in Model United Nations (MUN), political or civic activism, or community based health and development initiatives. KCL particularly seeks global problem solvers who can analyse complex international crises while also proposing actionable solutions grounded in evidence. For scholarship consideration, portfolios that demonstrate deep engagement with current geopolitical conflicts, global health emergencies, or systemic inequalities, combined with a clearly articulated vision are compelling. Leadership demonstrated in challenging or adverse circumstances is usually a significant factor in securing the most prestigious scholarship awards."
     },
@@ -1067,7 +1067,7 @@ export const universityData = [
         "rank": "32",
         "name": "Australian National University (ANU)",
         "url": "https://www.anu.edu.au",
-        "logoSrc": "/img/Australian-National-University.jpg",
+        "logoSrc": "/img/australian-national-university.jpg",
         "highlight": "Australian National University is Australia’s national research university, with a strong focus on global policy, security studies, and Asian and Pacific regional affairs.",
         "description": "Its Chancellor’s International Scholarship can provide tuition support of up to US$200,000 for outstanding international students. A competitive ANU portfolio should emphasise strategic research capability and evidence of regional leadership, reflecting the university’s role in shaping national and international policy discourse. ANU particularly values students who participate with large scale challenges such as climate change, geopolitical security, economic development, and public governance. Strong student applications often demonstrate high level policy analysis, participation in national or international organisations, and sustained academic excellence in relevant fields. The university seeks what may be described as the policy architect, an individual capable of synthesising complex information into actionable frameworks that address real world problems. For scholarship consideration, student portfolios that show a deep understanding of the Indo-Pacific economic region, combined with a clear and credible commitment to public service, are especially compelling. Applicants who can articulate how their work will generate meaningful benefits for both Australia and the wider global community are the most strongest candidates for competitive scholarships."
     },
@@ -1076,7 +1076,7 @@ export const universityData = [
         "rank": "33",
         "name": "The Chinese University of Hong Kong (CUHK)",
         "url": "https://www.cuhk.edu.hk",
-        "logoSrc": "/img/The-Chinese-University-of-Hong-Kong.jpg",
+        "logoSrc": "/img/the-chinese-university-of-hong-kong.jpg",
         "highlight": "The Chinese University of Hong Kong is a research led institution well-known for its collegiate system and strong abstract strengths in Chinese studies, alongside growing international academic influence.",
         "description": "Its transnational admission scholarships can reach up to US$150,000 for outstanding international students. A competitive CUHK portfolio should clearly demonstrate strong academic prowess alongside cultural appreciation, reflecting the university’s core emphasis on balanced personal development. CUHK is known for its “complete person” philosophy, valuing students who combine academic excellence with meaningful engagement in areas such as the arts, sports, leadership, and community service. Strong applications typically highlight bicultural or multicultural experiences and a continued interest in Sino global incorporation, particularly where students can demonstrate meaningful engagement with both local and international contexts. The university places very significant value on applicants who will actively contribute to its collegiate life style, participating in residential societies and campus activities. For scholarship consideration, portfolios that display very significant cross cultural projects, leadership in community initiatives, or consistent achievement across multiple domains are particularly effective. CUHK seeks active community participants who pair academic drive with engagement in cultural exchange and campus life."
     },
@@ -1103,7 +1103,7 @@ export const universityData = [
         "rank": "36",
         "name": "Monash University",
         "url": "https://www.monash.edu",
-        "logoSrc": "/img/Monash-University.jpg",
+        "logoSrc": "/img/monash-university.jpg",
         "highlight": "Monash University is Australia’s global network university, with campuses across multiple continents and a strong institutional focus on large scale problem solving.",
         "description": "Its International Leadership Scholarship provides full tuition support for outstanding international students. A competitive Monash portfolio should clearly demonstrate global ambition alongside practical impact, reflecting the university’s emphasis on innovation with purpose. The institution values applicants who can translate ideas into scalable solutions across fields such as climate technology, global health, engineering, international law, and social innovation. Strong portfolios typically include evidence of large scale social projects that extend beyond local contexts and show measurable outcomes across communities or systems. Monash particularly seeks highly disruptive leaders who can challenge conventional approaches and implement new frameworks for addressing complex global issues. For scholarship consideration, it is especially important to demonstrate experience leading initiatives with international scalability, supported by collaboration across borders, major disciplines, or institutions. Ultimately, Monash awards its competitive scholarships to international students who combine leadership, technical or analytical skills, and a track record of driving change on scale."
     },
@@ -1121,7 +1121,7 @@ export const universityData = [
         "rank": "38",
         "name": "Columbia University",
         "url": "https://www.columbia.edu",
-        "logoSrc": "/img/Columbia-University.jpg",
+        "logoSrc": "/img/columbia-university.jpg",
         "highlight": "Columbia University is widely regarded as the “Global Ivy”, situated in the heart of New York City and distinguished by its Core Academic Curriculum, as well as its leadership in journalism, finance, and the humanities.",
         "description": "As a need-blind institution, Columbia offers financial aid packages that can exceed US$350,000 for students with demonstrated need. A competitive Columbia portfolio should reflect strong urban intelligence and global awareness, aligning with the university’s emphasis on engaging directly with the intellectual and institutional resources of New York City. The university seeks “the intellectual in the city”, students who actively use the urban environment as a living laboratory for research, inquiry, and impact. Strong portfolios naturally demonstrate real world engagement through journalism projects, policy internships, research initiatives, or logical work addressing complex societal challenges. Columbia places a strong emphasis on critical inquiry, encouraging students to interrogate global issues such as human rights, climate change, inequality, and urban progress. For scholarship consideration, portfolios that demonstrate sustained engagement with global issues and evidence of meaningful, real world impact are especially compelling. Ultimately, Columbia values cosmopolitan scholars who can thrive in the intensity of Manhattan while contributing original insight and analysis to pressing global conversations."
     },
@@ -1130,7 +1130,7 @@ export const universityData = [
         "rank": "39",
         "name": "Seoul National University (SNU)",
         "url": "https://en.snu.ac.kr",
-        "logoSrc": "/img/Seoul-National-University.jpg",
+        "logoSrc": "/img/seoul-national-university.jpg",
         "highlight": "Seoul National University is widely regarded as the “Harvard of Korea”, with leading strengths in technological innovation, economics, and cultural studies, including the global rise of K-culture.",
         "description": "Its SNU Global Scholarship provides full tuition coverage and living expenses for highly competitive international students. A strong SNU portfolio should demonstrate both technological prowess and cultural agility, reflecting the university’s dual emphasis on advanced innovation and contextual understanding of Korean society. The institution values students who can bridge traditional values with a high tech future, particularly in fields where Korea plays a global leadership role such as electronics, AI, robotics, and creative industries. Competitive applications typically include evidence of deep STEM research, advanced technical projects, or meaningful involvement in Korea related academic or cultural initiatives. SNU looks for future tech leaders who can demonstrate not only academic excellence but also the capacity to operate within Korea’s evolving innovation ecosystem. For scholarship consideration, portfolios that demonstrate mastery of complex technological skills, leadership in innovation projects, and a clear understanding of Korea’s global role are especially compelling. Eventually, the university seeks global envoys for Korean innovation who can contribute to both national advancement and international collaboration through research, entrepreneurship, or interdisciplinary impact."
     },
@@ -1149,7 +1149,7 @@ export const universityData = [
         "rank": "41",
         "name": "Institut Polytechnique de Paris",
         "url": "https://www.ip-paris.fr/en",
-        "logoSrc": "/img/Institut-Polytechnique-de-Paris.jpg",
+        "logoSrc": "/img/institut-polytechnique-de-paris.jpg",
         "highlight": "Institut Polytechnique de Paris is an exclusive consortium of French Grandes Écoles, internationally recognised for excellence in mathematics, data science, and advanced engineering disciplines such as product manufacturing and systems engineering.",
         "description": "Its competitive excellence scholarships for international Master’s and PhD students are highly selective and reward exceptional academic and research potential. A strong Institut Polytechnique de Paris portfolio must be technically elite, reflecting the depth and rigor of European engineering education at its highest level. The institution places strong emphasis on quantitative mastery and industrial scalability, seeking candidates whose work can translate from theoretical foundations into large scale technical or industrial applications. Competitive admission applications typically include advanced mathematical research, complex engineering projects, and core evidence of sustained collaborative innovation across technical teams or research groups. The institution looks for what may be described as the strategic technologist, an individual capable of integrating mathematical rigor, engineering insight, and systems thinking to address high impact technological challenges. For scholarship consideration, it is particularly important to demonstrate readiness for the demanding academic environment of the Grandes Écoles system, alongside clear ambition to contribute to Europe’s high tech and industrial sectors through research or leadership in advanced engineering fields."
     },
@@ -1158,7 +1158,7 @@ export const universityData = [
         "rank": "42",
         "name": "Northwestern University",
         "url": "https://www.northwestern.edu",
-        "logoSrc": "/img/Northwestern-University.jpg",
+        "logoSrc": "/img/northwestern-university.jpg",
         "highlight": "Northwestern University is widely known for its strengths in journalism through Medill, business education through Kellogg, and a deeply interdisciplinary academic culture that encourages collaboration across fields.",
         "description": "With need blind financial aid policies for international students, its scholarship packages can exceed US$350,000 for eligible applicants. A good Northwestern portfolio should demonstrate strong communication excellence together with authentic interdisciplinary curiosity, reflecting the university’s emphasis on bridging concepts across domains. The institution values what may be described as the multi hyphenate thinker, a student capable of integrating disciplines such as journalism and economics, music and computer science, or engineering and public policy into coherent, impactful work. Strong portfolios typically highlight cross field projects where communication is widely used as a tool for driving understanding, innovation, or social change. Northwestern places a strong importance on creative problem solving, particularly when students can display how they translate complex ideas into accessible narratives or actionable insights. For scholarship consideration, portfolios that demonstrate sustained experience as an effective storyteller of complex ideas, supported by collaborative initiatives and interdisciplinary achievements, are particularly compelling. Eventually, the university values students who will dynamically contribute to its collaborative intellectual campus culture by connecting disciplines and communicating ideas with precision and purpose."
     },
@@ -1185,7 +1185,7 @@ export const universityData = [
         "rank": "45",
         "name": "University of Michigan-Ann Arbor",
         "url": "https://umich.edu",
-        "logoSrc": "/img/University-of-Michigan-Ann-Arbor.jpg",
+        "logoSrc": "/img/university-of-michigan-ann-arbor.jpg",
         "highlight": "University of Michigan is a quintessential American public research university, widely recognised for excellence in engineering, medicine, and the social sciences.",
         "description": "While merit aid for non-resident students is highly competitive, prestigious awards such as the Stamps Scholarship can provide full ride support for exceptional applicants. A strong University of Michigan portfolio should clearly demonstrate collective impact and broad research engagement, reflecting the university’s interdisciplinary and public service oriented undertaking. The institution looks for what may be described as the collaborative scholar, a student who thrives in cross disciplinary environments and contributes meaningfully to large scale problem solving efforts. Competitive portfolios typically include evidence of leadership in large teams, research with public utility, and sustained academic excellence across multiple domains. Michigan places very strong value on intellectual diversity, encouraging applicants who can connect engineering, health sciences, public policy, and social research in meaningful ways. For scholarship consideration, portfolios that document significant community initiatives or research projects with measurable impact or outcomes are particularly compelling. In the end, the university seeks “Maize and Blue” leaders who combine academic strength with a clear ability to drive impact at local, national, and global levels through collaboration."
     },
@@ -1194,7 +1194,7 @@ export const universityData = [
         "rank": "46",
         "name": "University of California, Los Angeles (UCLA)",
         "url": "https://www.ucla.edu",
-        "logoSrc": "/img/University-of-California-Los-Angeles.jpg",
+        "logoSrc": "/img/university-of-california-los-angeles.jpg",
         "highlight": "University of California, Los Angeles (UCLA) is the most applied-to university in the USA, widely recognised for its strengths in film, medicine, and athletics, as well as its broader excellence across the arts, sciences, and public life.",
         "description": "Its UCLA Achievement Scholarship and other merit based awards are designed to support high achieving non-resident students. A competitive UCLA portfolio should project creative leadership alongside resilience, reflecting the university’s dynamic culture at the intersection of academia and entertainment. The institution looks for what may be described as the optimistic change maker, a student who uses talent and initiative to positively influence their communities and broader society. Strong portfolios typically include evidence of artistic or scientific breakthroughs, meaningful community building efforts, and clear examples of overcoming significant personal or academic challenges. UCLA values what might be called the “Hollywood Scale” ambition grounded in grassroots impact, encouraging students to think boldly while remaining deeply connected to real world communities. For scholarship consideration, portfolios that demonstrate a different creative or scientific “spike” paired with a compelling personal narrative are especially effective. Eventually, the university seeks Bruin leaders who will actively contribute to the intellectual, cultural, and social vibrancy of Los Angeles while maintaining a strong record of academic performance, extracurricular achievement, growth, and service."
     },
@@ -1203,7 +1203,7 @@ export const universityData = [
         "rank": "47",
         "name": "Delft University of Technology (TU Delft)",
         "url": "https://www.tudelft.nl/en",
-        "logoSrc": "/img/Delft-University-of-Technology.jpg",
+        "logoSrc": "/img/delft-university-of-technology.jpg",
         "highlight": "Delft University of Technology is widely recognised as Europe’s engineering hub, with global leadership in aerospace engineering, water management, and industrial design.",
         "description": "Its Justus & Louise van Effen Excellence Scholarship provides full tuition coverage along with a living stipend for exceptional international students. A competitive TU Delft portfolio should be both design heavy and technologically accurate, reflecting the university’s strong emphasis on applied engineering and real world problem solving. The institution places particular importance on systems engineering and sustainable design, inspiring students to think in terms of integrated solutions rather than isolated components. Strong student portfolios often include complete design documentation, engineering prototypes, and recorded evidence of collaborative problem solving within multidisciplinary teams. TU Delft highly values what may be described as the Dutch pragmatist, a student who combines innovative thinking with practical feasibility and strong execution. For scholarship consideration, portfolios that demonstrate significant green technology projects, participation in engineering competitions, or substantial applied research are especially compelling. Ultimately, the university seeks candidates who can show capability to take a project from concept to construction, demonstrating both technical mastery and the capacity to deliver scalable engineering solutions."
     },
@@ -1212,7 +1212,7 @@ export const universityData = [
         "rank": "48",
         "name": "Shanghai Jiao Tong University (SJTU)",
         "url": "https://en.sjtu.edu.cn",
-        "logoSrc": "/img/Shanghai-Jiao-Tong-University.jpg",
+        "logoSrc": "/img/shanghai-jiao-tong-university.jpg",
         "highlight": "Shanghai Jiao Tong University is generally recognised as a technical powerhouse in China, with major strengths in engineering, naval architecture, and medicine.",
         "description": "For international students, major funding opportunities such as the Chinese Government Scholarship and SJTU’s own merit based awards provide substantial financial support. A competitive SJTU portfolio should focus on industrial innovation and Sino global research collaboration, reflecting the university’s close ties to China’s rapidly evolving manufacturing and technology sectors. The institution places strong emphasis on awareness of China’s current role in global tech leadership, particularly in advanced engineering, applied sciences, and industrial systems. Strong student portfolios often include evidence of advanced STEM projects, meaningful industrial internships, or collaborative research project experiences, particularly those involving international laboratories or cross border teams. SJTU also values applicants who demonstrate proficiency in Mandarin Chinese, as this supports deeper integration into its academic and professional ecosystem. The university seeks what may be described as the high tech professional, a student capable of combining full technical expertise with global perspective and practical execution. For scholarship consideration, portfolios that very clearly demonstrate engagement with high level engineering or medical research, alongside a strong alignment with global scientific mission, are especially compelling."
     },
@@ -1221,7 +1221,7 @@ export const universityData = [
         "rank": "49",
         "name": "Zhejiang University (ZJU)",
         "url": "https://www.zju.edu.cn/english",
-        "logoSrc": "/img/Zhejiang-University.jpg",
+        "logoSrc": "/img/zhejiang-university.jpg",
         "highlight": "Zhejiang University is one of China’s “Big Three” universities, located in the technology hub of Hangzhou, home to major digital economy players such as Alibaba.",
         "description": "Its Zhejiang University Scholarship targets top international talent and offers competitive funding for outstanding students. A strong ZJU portfolio should clearly project e-commerce innovation and digital business intelligence, reflecting the university’s deep integration with China’s fast evolving digital economy. The institution highly values what may be described as the tech entrepreneur, a student who understands how technology, data, and markets intersect within the broader business framework of the Digital Silk Road. Competitive applications typically include evidence of startup experience, digital marketing projects, advanced computer science research, or data driven business initiatives. ZJU places strong emphasis on adaptive innovation, rewarding students who can quickly apply their technical skills to changing market and technological environments. For scholarship consideration, portfolios that demonstrate mastery of a technical domain alongside leadership in e-commerce or digital platform projects are particularly compelling. Eventually, the university seeks future leaders in the digital economy who could operate successfully within China’s innovation ecosystem and contribute significantly to technology and business development."
     },
@@ -1230,7 +1230,7 @@ export const universityData = [
         "rank": "50",
         "name": "Yonsei University",
         "url": "https://www.yonsei.ac.kr/en_sc",
-        "logoSrc": "/img/Yonsei-University.jpg",
+        "logoSrc": "/img/yonsei-university.jpg",
         "highlight": "Yonsei University is usually regarded as the global gateway to Korea, with leading academic strengths in business, global leadership, and Korean studies.",
         "description": "Its Underwood International College (UIC) Scholarship offers full ride packages for highly competitive international students. A Yonsei portfolio should clearly demonstrate transnational leadership and interdisciplinary capability, reflecting the university’s globally oriented academic environment. The institution values what may be described as the global Asian scholar, a student who can operate across cultural, academic, and professional contexts while engaging deeply with South Korea’s role in global affairs. Competitive applications typically include clear evidence of international debate experience, cross cultural research, entrepreneurial initiatives, or leadership in globally oriented projects. Yonsei places strong emphasis on social responsibility combined with global ambition, encouraging students to connect personal achievement with broader societal impact. For scholarship consideration, portfolios that demonstrate leadership in international initiatives, recognition through international awards, or sustained engagement in cross border collaboration are especially compelling. Ultimately, the university seeks cultural bridge builders who can contribute to South Korea’s global integration while excelling in interdisciplinary focused academic and research pathways."
     },
@@ -1239,7 +1239,7 @@ export const universityData = [
         "rank": "51",
         "name": "University of Bristol",
         "url": "https://www.bristol.ac.uk",
-        "logoSrc": "/img/University-of-Bristol.jpg",
+        "logoSrc": "/img/university-of-bristol.jpg",
         "highlight": "University of Bristol is a leading research university with strengths in climate science, social sciences, and information science, and a strong reputation for addressing global challenges through interdisciplinary research.",
         "description": "It’s Think Big Scholarship is among the most generous for international students, providing awards of up to US$60,000. A competitive Bristol portfolio should clearly demonstrate forward-thinking social impact alongside strong research ambition, reflecting the university’s commitment to tackling complex global problems. The institution values students who participate deeply with issues such as sustainability, inequality, and technological revolution, and who can translate academic insights into meaningful real-world actions. Strong applications typically include evidence of environmental activism, social justice advocacy, or high-level STEM research with demonstrable outcomes. Bristol looks for what may be described as the conscious intellectual, a student who combines analytical strength with a strong ethical orientation and commitment to positive change. For scholarship consideration, portfolios that show sustained engagement with sustainable futures and community leadership are especially compelling. Eventually, the university seeks bold thinkers who are prepared to use their academic aptitudes to drive meaningful social and environmental change at national and international levels."
     },
@@ -1257,7 +1257,7 @@ export const universityData = [
         "rank": "53",
         "name": "University of Amsterdam (UvA)",
         "url": "https://www.uva.nl/en",
-        "logoSrc": "/img/University-of-Amsterdam.jpg",
+        "logoSrc": "/img/university-of-amsterdam.jpg",
         "highlight": "University of Amsterdam is widely regarded as Europe’s social science and media powerhouse, with leading core strengths in communication science, psychology, and cultural studies.",
         "description": "Its Amsterdam Merit Scholarship is designed to attract international students with strong academic and analytical profiles. A competitive UvA portfolio should clearly demonstrate important global engagement and cultural intelligence, reflecting the university’s main emphasis on understanding complex modern societies through rigorous academic inquiry. The institution values what may be described as the independent critical thinker, a student who can analyse media, society, and culture with intellectual depth and methodological care. Strong applications typically include clear evidence of media literacy projects, sociological or psychological research, and leadership in multicultural or international contexts. UvA particularly seeks what may be described as the cosmopolitan critic, someone who can engage with global media trends, urban social dynamics, and cultural transformation while maintaining a strong analytical foundation. For scholarship consideration, portfolios that demonstrate a clear analytical “spike” in fields such as media studies, urban sociology, or global communication, combined with continuous reflective engagement with global issues, are especially compelling. The university values international students who can thrive in diverse academic environment and contribute to critical debates about society."
     },
@@ -1266,7 +1266,7 @@ export const universityData = [
         "rank": "54",
         "name": "The Hong Kong Polytechnic University (PolyU)",
         "url": "https://www.polyu.edu.hk",
-        "logoSrc": "/img/The-Hong-Kong-Polytechnic-University.jpg",
+        "logoSrc": "/img/the-hong-kong-polytechnic-university.jpg",
         "highlight": "The Hong Kong Polytechnic University (PolyU) is widely regarded as a professional powerhouse, with strong international recognition in design, hospitality, engineering, and applied sciences.",
         "description": "Its entry scholarships can provide full tuition coverage along with a monthly stipend for outstanding international students. A competitive PolyU portfolio should demonstrate professional practicality alongside design innovation, reflecting the university’s strong focus on industry aligned education and applied research. The institution places very significant value on research with social impact, especially when students can show how their work improves real world conditions in areas such as urban living, healthcare, accessibility, or service industries. Strong applications typically include design portfolios, hospitality related projects, applied engineering solutions, or other practice based work that demonstrates both creativity and technical competence. PolyU looks for what may be described as the practical visionary, a student who can translate ideas into functional, user focused solutions with societal benefit. For scholarship consideration, portfolios that show a sustained commitment to improving human life through design or engineering innovation are especially compelling. Ultimately, the university seeks high potential professionals who can contribute directly to Hong Kong’s development as a global tech hub for applied research, innovation, service, and design driven impactful solutions."
     },
@@ -1275,7 +1275,7 @@ export const universityData = [
         "rank": "55",
         "name": "New York University (NYU)",
         "url": "https://www.nyu.edu",
-        "logoSrc": "/img/New-York-University.jpg",
+        "logoSrc": "/img/new-york-university.jpg",
         "highlight": "New York University (NYU) is generally recognised as a “Global Network University” because of its extensive international presence and strong commitment to cross cultural education. The university is particularly renowned for programs in film through Tisch School of the Arts, business through NYU Stern School of Business, and interdisciplinary fields such as global studies and international relations.",
         "description": "Scholarships such as the AnBryce Scholarship Program are aimed at supporting first generation college students and other high achieving applicants with extraordinary leadership potential, sometimes covering most or all tuition expenses. A strong NYU portfolio should reflect global ambition, intellectual curiosity, and imaginative resilience while demonstrating the ability to thrive in diverse cultural and academic environments. The university values students who show individual initiative through international projects, leadership experiences, creative activities, and meaningful community impact. NYU also greatly appreciates what many describe as “urban fearlessness”, meaning the confidence to engage with the dynamic and fast paced environment of New York City. For scholarship applicants, presenting a distinguishing global perspective alongside a proven history of perseverance, adaptability, and leadership can greatly strengthen the application and prove the potential to contribute meaningfully to the community."
     },
@@ -1293,7 +1293,7 @@ export const universityData = [
         "rank": "57",
         "name": "Kyoto University",
         "url": "https://www.kyoto-u.ac.jp/en",
-        "logoSrc": "/img/Kyoto-University.jpg",
+        "logoSrc": "/img/kyoto-university.jpg",
         "highlight": "Kyoto University is widely regarded as one of Japan’s leading research institutions, particularly respected for its research contributions to theoretical sciences, advanced mathematics, engineering, and traditional Japanese cultural studies. The university has produced several distinguished researchers and Nobel Prize winners, reinforcing its reputation for deep intellectual inquiry and long term academic excellence.",
         "description": "For international students, programs such as the Kyoto iUP Program provide substantial financial support, including full tuition fees coverage and living stipends for selected students over several years of study. A strong Kyoto University portfolio should reflect academic purity, intellectual perseverance, and a sustained commitment to mastering a specific field of knowledge. The university values what can be described as “deep, quiet excellence”, rewarding qualified students who demonstrate disciplined curiosity, independent thinking, and scholarly emphasis rather than superficial achievement. Applicants should highlight advanced mathematical or scientific research, original academic projects, participation in top Olympiads or research competitions, cultural immersion experiences, and evidence of consistent academic dedication over time. Kyoto University also values students who combine scientific ability with philosophical reflection and an appreciation for Japanese traditions and culture. For scholarship applicants, demonstrating a powerful academic “spike” in a specialised area together with intellectual dimensions, cultural openness, and the potential for groundbreaking research can strengthen the application and position the student as a future leader."
     },
@@ -1311,7 +1311,7 @@ export const universityData = [
         "rank": "59",
         "name": "Universiti Malaya (UM)",
         "url": "https://www.um.edu.my",
-        "logoSrc": "/img/Universiti-Malaya.jpg",
+        "logoSrc": "/img/universiti-malaya.jpg",
         "highlight": "University of Malaya (UM) is widely recognised as Malaysia’s leading university and is especially respected for its core strengths in engineering, social sciences, medicine, business, and Islamic studies. As one of the Southeast Asia’s most internationally connected institutions, UM places very strong emphasis on regional cooperation, multicultural engagement, and academic leadership within the ASEAN community.",
         "description": "Scholarship opportunities such as the University of Malaya International Student Scholarship are designed to attract high achieving international students who clearly demonstrate academic excellence and leadership potential. A strong UM portfolio should highlight developing nations leadership, cultural diplomacy, and a meaningful understanding of ASEAN’s growing role in international affairs. The university values students who combine academic performance with social awareness, intercultural communication skills, and active community involvement. Applicants should present documented proof of social leadership projects, cross cultural research, volunteer initiatives, academic accomplishments, and key contributions to social or educational development. UM also appreciates students who demonstrate engagement with topics such as South Asia cooperation, sustainable development, Islamic finance, or regional economic alliance through research, entrepreneurship, or public service activities. For scholarship applicants, showing the aptitude to balance academic achievement with cultural understanding and leadership can significantly strengthen the application and position the student as a future global ambassador for international cooperation."
     },
@@ -1320,7 +1320,7 @@ export const universityData = [
         "rank": "60",
         "name": "KU Leuven",
         "url": "https://www.kuleuven.be/english",
-        "logoSrc": "/img/KU-Leuven.jpg",
+        "logoSrc": "/img/ku-leuven.jpg",
         "highlight": "KU Leuven is widely regarded as one of Europe’s most innovative universities and is internationally recognised for excellence in biomedical sciences, law, engineering, theology, and interdisciplinary research. The university has a very good reputation for combining advanced scientific inquiry with social responsibility, ethical reflection, and practical innovation.",
         "description": "Scholarship opportunities such as the Master Mind Scholarships support outstanding international students by helping cover tuition expenses and living costs. A strong KU Leuven portfolio should be deeply research oriented while also demonstrating intellectual adaptability and interdisciplinary thinking. The university values applicants who can connect scientific, legal, ethical, and social perspectives to address complex global challenges. Students should highlight advanced research projects, policy analysis, laboratory work, publications, debate, innovation initiatives, or problem solving experiences that show analytical depth and academic maturity. KU Leuven also appreciates engagement with broader ethical questions and the inclusive intellectual traditions associated with the Catholic higher education, particularly where science, technology, law, medicine, and society intersect. For scholarship applicants, demonstrating a meaningful ethical or scientific contribution to a field, combined with the ability to navigate complex interdisciplinary issues, can significantly strengthen the application and position the student as a future trailblazer in research, innovation, and socially responsible international development."
     }
