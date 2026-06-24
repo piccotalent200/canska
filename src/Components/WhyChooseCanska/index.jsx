@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Tabs } from "flowbite-react";
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import HeroSection from './sections/HeroSection';
@@ -21,6 +21,7 @@ const WhyChooseCanska = () => {
     const searchParams = useSearchParams();
     const router = useRouter();
     const pathname = usePathname();
+    const tabsRef = useRef(null); 
 
     const urlTab = searchParams.get('activeTab');
     const initialTab = urlTab ? parseInt(urlTab, 10) : 0;
@@ -41,6 +42,12 @@ const WhyChooseCanska = () => {
         params.set('activeTab', index.toString());
 
         router.push(`${pathname}?${params.toString()}`, { scroll: false });
+
+        if (tabsRef.current) {
+          const yOffset = -80; // Matches your sticky top-[80px] so the tab bar aligns perfectly
+          const yPosition = tabsRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: yPosition, behavior: 'smooth' });
+        }
     };
 
     const renderTabTitle = (number, text, index) => {
@@ -67,7 +74,7 @@ const WhyChooseCanska = () => {
         <div className='font-dm'>
             <HeroSection />
 
-            <div className="w-full">
+            <div className="w-full" ref={tabsRef}>
                 <Tabs
                     key={activeTab}
                     variant="pills"
