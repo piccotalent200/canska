@@ -481,7 +481,7 @@ const QuadLesson = () => {
             </section>
 
 
-            <section className="w-full  p-[56px_48px] bg-[#FFFFFF] scroll-mt-[80px]" id="seekers">
+            <section className="w-full  p-[56px_48px] bg-[#FFFFFF] scroll-mt-[80px]" id="makers">
                 <div className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-12 lg:gap-16 mb-[56px]">
 
                     <div className="flex-1 w-full relative min-h-[500px] lg:min-h-[762px] rounded-[24px] overflow-visible z-10 group">

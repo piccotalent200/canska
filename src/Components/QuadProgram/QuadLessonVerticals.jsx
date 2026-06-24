@@ -22,7 +22,7 @@ const QuadLessonVerticals = () => {
     ];
 
 
-   const [showMini, setShowMini] = useState(false);
+    const [showMini, setShowMini] = useState(false);
     const mainContainerRef = useRef(null);
 
     useEffect(() => {
@@ -31,21 +31,16 @@ const QuadLessonVerticals = () => {
 
         const observer = new IntersectionObserver(
             ([entry]) => {
-                // entry.isIntersecting is true if ANY part of the main container is visible.
-                // We want showMini to be true ONLY when it is completely out of the viewport.
                 setShowMini(!entry.isIntersecting);
             },
             {
-                // A threshold of 0 means the trigger fires the exact moment the 
-                // entire element becomes completely hidden or slightly visible.
                 threshold: 0,
-                // Offset the root boundary to account for your header bar area
                 rootMargin: '-80px 0px 0px 0px'
             }
         );
 
         observer.observe(currentContainer);
-        
+
         return () => {
             if (currentContainer) {
                 observer.unobserve(currentContainer);
@@ -120,83 +115,126 @@ const QuadLessonVerticals = () => {
                 </div>
 
                 {/* Cards Row Wrapper Component */}
-              <div className="relative w-full">
-            
-            {/* 1. CONDENSED MINI NAV BAR */}
-            {/* This only shows when the main container below is 100% hidden from the viewport */}
-            <div 
-                className={`fixed top-[80px] left-0 w-full z-50 bg-[#1F232E]/95 backdrop-blur-md border-b border-white/10 p-[12px_16px] sm:p-[16px_32px] lg:p-[16px_48px] overflow-auto [scrollbar-width:none] transition-all duration-300 ease-in-out ${
-                    showMini 
-                        ? 'opacity-100 translate-y-0 pointer-events-auto' 
-                        : 'opacity-0 -translate-y-2 pointer-events-none'
-                }`}
-            >
-                <div className="flex items-center gap-[16px] sm:gap-[24px] flex-nowrap">
-                   
-                    <div className="flex gap-[8px] sm:gap-[12px] flex-nowrap">
-                        {phasesQuad.map((phase, idx) => (
-                            <Link 
-                                key={idx} 
-                                href={phase.link || '#'}
-                                className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/10 hover:bg-white/[0.12] transition-colors whitespace-nowrap group"
-                            >
-                                <div 
-                                    className="w-2 h-2 rounded-full transform group-hover:scale-125 transition-transform" 
-                                    style={{ backgroundColor: phase.color }}
-                                />
-                                <span className="text-white text-xs sm:text-sm font-medium tracking-tight">
-                                    {phase.name}
-                                </span>
-                                
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </div>
+                <div className="relative w-full">
 
-            {/* 2. PRIMARY ACTUAL VERSION CONTAINER */}
-            {/* We attach the ref directly here to observe its direct visibility status */}
-            <div 
-                ref={mainContainerRef}
-                className="top-[80px] sticky w-full p-[20px_16px_20px_16px] sm:p-[40px_32px_40px_32px] lg:p-[60px_48px_50px] overflow-auto [scrollbar-width:none] z-40"
-            >
-                <div className="flex gap-[12px] flex-nowrap">
-                    {phasesQuad.map((phase, idx) => (
-                        <ScrollAnimatedElement
-                            key={idx}
-                            duration={0.5}
-                            delay={0.3 + idx * 0.08}
-                            yOffset={30}
-                            className="min-w-[327px] group relative flex flex-col justify-between p-[19.8px] min-h-[160px] bg-white/[0.05] border border-white/15 rounded-2xl overflow-hidden transition-all duration-300 hover:bg-white/[0.08] hover:border-white/30 hover:-translate-y-1 cursor-pointer grow"
-                        >
-                            <Link href={phase.link || '#'} className="relative z-10 flex flex-col gap-1 w-full h-full">
-                                <div className="flex justify-between items-center w-full">
-                                    <h3
-                                        className="text-[26px] font-semibold tracking-[-0.52px] leading-[40px]"
-                                        style={{ color: phase.color }}
+                    {/* 1. CONDENSED MINI NAV BAR */}
+                    {/* This only shows when the main container below is 100% hidden from the viewport */}
+                    <div
+                        className={`fixed top-[80px] left-0 w-full z-50 bg-[#1F232E]/95 backdrop-blur-md border-b border-white/10 p-[12px_16px] sm:p-[16px_32px] lg:p-[16px_48px] overflow-auto [scrollbar-width:none] transition-all duration-300 ease-in-out ${showMini
+                                ? 'opacity-100 translate-y-0 pointer-events-auto'
+                                : 'opacity-0 -translate-y-2 pointer-events-none'
+                            }`}
+                    >
+                        <div className="flex items-center gap-[16px] sm:gap-[24px] flex-nowrap">
+
+                            <div className="flex gap-[8px] sm:gap-[12px] flex-nowrap">
+                                {phasesQuad.map((phase, idx) => (
+                                    <button
+                                        type="button"
+                                        key={idx}
+                                        onClick={() => {
+                                            // 1. Clean the string to get the exact ID
+                                            const targetId = phase.link.replace('#', '').trim().toLowerCase();
+                                            const element = document.getElementById(targetId);
+
+                                            if (element) {
+                                                // 2. Perform the scroll
+                                                element.scrollIntoView({
+                                                    behavior: 'smooth',
+                                                    block: 'start'
+                                                });
+
+                                                // 3. Update the URL cleanly
+                                                if (window.location.hash !== phase.link) {
+                                                    window.history.pushState(null, '', phase.link);
+                                                }
+                                            } else {
+                                                // Debugger helper: This will tell you exactly what's wrong in your console
+                                                console.error(`Could not find an HTML element with id="${targetId}"`);
+                                            }
+                                        }}
+                                        className="cursor-pointer flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/10 hover:bg-white/[0.12] transition-colors whitespace-nowrap group"
                                     >
-                                        {phase.name}
-                                    </h3>
-                                    <div
-                                        className="w-2 h-2 rounded-full"
-                                        style={{ backgroundColor: phase.color }}
-                                    />
-                                </div>
+                                        <div
+                                            className="w-2 h-2 rounded-full transform group-hover:scale-125 transition-transform"
+                                            style={{ backgroundColor: phase.color }}
+                                        />
+                                        <span className="text-white text-xs sm:text-sm font-medium tracking-tight">
+                                            {phase.name}
+                                        </span>
 
-                                <span className="text-white text-sm leading-[18px] font-medium tracking-[1.2px] uppercase pt-3">
-                                    {phase.ages}
-                                </span>
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
 
-                                <span className="text-white/80 text-sm leading-[16px] italic font-normal pt-1">
-                                    {phase.tagline}
-                                </span>
-                            </Link>
-                        </ScrollAnimatedElement>
-                    ))}
+                    {/* 2. PRIMARY ACTUAL VERSION CONTAINER */}
+                    {/* We attach the ref directly here to observe its direct visibility status */}
+                    <div
+                        ref={mainContainerRef}
+                        className="top-[80px] sticky w-full p-[20px_16px_20px_16px] sm:p-[40px_32px_40px_32px] lg:p-[60px_48px_50px] overflow-auto [scrollbar-width:none] z-40"
+                    >
+                        <div className="flex gap-[12px] flex-nowrap">
+                            {phasesQuad.map((phase, idx) => (
+                                <ScrollAnimatedElement
+                                    key={idx}
+                                    duration={0.5}
+                                    delay={0.3 + idx * 0.08}
+                                    yOffset={30}
+                                    className="min-w-[327px] group relative flex flex-col justify-between p-[19.8px] min-h-[160px] bg-white/[0.05] border border-white/15 rounded-2xl overflow-hidden transition-all duration-300 hover:bg-white/[0.08] hover:border-white/30 hover:-translate-y-1 cursor-pointer grow"
+                                >
+                                    <button 
+                                    type="button"
+                                    onClick={() => {
+                                            // 1. Clean the string to get the exact ID
+                                            const targetId = phase.link.replace('#', '').trim().toLowerCase();
+                                            const element = document.getElementById(targetId);
+
+                                            if (element) {
+                                                // 2. Perform the scroll
+                                                element.scrollIntoView({
+                                                    behavior: 'smooth',
+                                                    block: 'start'
+                                                });
+
+                                                // 3. Update the URL cleanly
+                                                if (window.location.hash !== phase.link) {
+                                                    window.history.pushState(null, '', phase.link);
+                                                }
+                                            } else {
+                                                // Debugger helper: This will tell you exactly what's wrong in your console
+                                                console.error(`Could not find an HTML element with id="${targetId}"`);
+                                            }
+                                        }}
+                                    className="relative z-10 flex flex-col gap-1 w-full h-full cursor-pointer">
+                                        <div className="flex justify-between items-center w-full">
+                                            <h3
+                                                className="text-[26px] font-semibold tracking-[-0.52px] leading-[40px]"
+                                                style={{ color: phase.color }}
+                                            >
+                                                {phase.name}
+                                            </h3>
+                                            <div
+                                                className="w-2 h-2 rounded-full"
+                                                style={{ backgroundColor: phase.color }}
+                                            />
+                                        </div>
+
+                                        <span className="block text-start text-white text-sm leading-[18px] font-medium tracking-[1.2px] uppercase pt-3">
+                                            {phase.ages}
+                                        </span>
+
+                                        <span className="block text-start text-white/80 text-sm leading-[16px] italic font-normal pt-1">
+                                            {phase.tagline}
+                                        </span>
+                                    </button>
+                                </ScrollAnimatedElement>
+                            ))}
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-
-        </div>
 
             </section>
 

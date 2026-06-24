@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react'; // 1. Added useRef
 import { Tabs } from "flowbite-react";
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import HeroSection from './sections/HeroSection';
@@ -21,6 +21,9 @@ const UniversityPrep = () => {
     const searchParams = useSearchParams();
     const router = useRouter();
     const pathname = usePathname();
+    
+    // 2. Create a ref for the tabs section
+    const tabsRef = useRef(null); 
 
     const urlTab = searchParams.get('activeTab');
     const initialTab = urlTab ? parseInt(urlTab, 10) : 0;
@@ -35,13 +38,21 @@ const UniversityPrep = () => {
     }, [urlTab]);
 
     const handleTabChange = (index) => {
-        console.log(index,"index123");
         setActiveTab(index);
 
         const params = new URLSearchParams(searchParams.toString());
         params.set('activeTab', index.toString());
 
+        // Keep scroll: false so Next.js doesn't forcefully yank the viewport to the absolute top of the page
         router.push(`${pathname}?${params.toString()}`, { scroll: false });
+
+        // 3. Smoothly scroll the user to the top of the tab container (accounting for your sticky headers if needed)
+        if (tabsRef.current) {
+            const yOffset = -80; // Matches your sticky top-[80px] so the tab bar aligns perfectly
+            const yPosition = tabsRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            
+            window.scrollTo({ top: yPosition, behavior: 'smooth' });
+        }
     };
 
     const renderTabTitle = (number, text, index) => {
@@ -68,7 +79,8 @@ const UniversityPrep = () => {
         <div className='font-dm'>
             <HeroSection />
 
-            <div className="w-full">
+            {/* 4. Attached the ref to this wrapper div */}
+            <div className="w-full" ref={tabsRef}>
                 <Tabs
                     key={activeTab}
                     variant="pills"
