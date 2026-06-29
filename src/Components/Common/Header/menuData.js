@@ -110,7 +110,7 @@ const menuData = {
     sections: [
       {
         title: 'For Parents',
-        link: '/why-canska',
+        link: '/for-parents',
         description: 'Parenting is the ultimate long-term investment. This is your map — the strategic value, the real ROI, the admissions insights, the commitments expected, and the workload philosophy that protects childhood while building greatness.',
         cta: 'Learn More',
       },
@@ -124,27 +124,27 @@ const menuData = {
         links: [
           {
             title: '  The Real ROI',
-            mainLink: '/why-canska',
+            mainLink: '/for-parents?activeTab=0',
             subLinks: ['Teaching Methodology', 'Personalized Learning', 'Innovation Focus']
           },
           {
             title: 'The Strategic Value',
-            mainLink: '/',
+            mainLink: '/for-parents?activeTab=1',
             subLinks: ['University Acceptance', 'Academic Performance', 'Graduate Outcomes']
           },
           {
             title: 'Admissions Insights',
-            mainLink: '/',
+            mainLink: '/for-parents?activeTab=2',
             subLinks: ['Current Students', 'Alumni Reviews', 'Parent Feedback']
           },
           {
             title: 'Parental Commitment',
-            mainLink: '/',
+            mainLink: '/for-parents?activeTab=3',
             subLinks: ['Program Comparison', 'Pricing Options', 'Benefits Overview']
           },
           {
             title: 'Student Workload Policy',
-            mainLink: '/',
+            mainLink: '/for-parents?activeTab=4',
             subLinks: ['Program Comparison', 'Pricing Options', 'Benefits Overview']
           },
         ],
