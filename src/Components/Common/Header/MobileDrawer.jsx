@@ -6,16 +6,11 @@ import Link from 'next/link'
 
 const MobileDrawer = ({ isOpen, onClose, menuData }) => {
   const [activeSubmenu, setActiveSubmenu] = useState(null)
-  const [activeSubLink, setActiveSubLink] = useState(null)
+
   const router = useRouter()
 
   const handleSubmenuClick = (menuTitle) => {
     setActiveSubmenu(activeSubmenu === menuTitle ? null : menuTitle)
-    setActiveSubLink(null)
-  }
-
-  const handleSubLinkClick = (linkTitle) => {
-    setActiveSubLink(activeSubLink === linkTitle ? null : linkTitle)
   }
 
   const handleCreateAccount = () => {
@@ -25,6 +20,14 @@ const MobileDrawer = ({ isOpen, onClose, menuData }) => {
 
   const handleApplyToTheQuad = () => {
     router.push('/apply-quad')
+    onClose(false)
+  }
+  const handleCkickAbout = () => {
+   router.push('/about')
+    onClose(false)
+  }
+  const handleClickAddons = () => {
+    router.push('/add-ons')
     onClose(false)
   }
 
@@ -94,29 +97,13 @@ const MobileDrawer = ({ isOpen, onClose, menuData }) => {
                                 <ul className="space-y-2">
                                   {section.links.map((link, linkIndex) => (
                                     <li key={linkIndex}>
-                                      <button
-                                        onClick={() => handleSubLinkClick(link.title)}
+                                      <Link
+                                        href={link.mainLink || '/'}
+                                        onClick={() => onClose(false)}
                                         className="w-full flex items-center justify-between text-base font-medium text-[#FFFFFF] hover:text-[#FFFFFF]/80 py-2 cursor-pointer sansFlex"
                                       >
                                         <span>{link.title}</span>
-                                        {/* <img
-                                          src="/img/dropdown-arrow-white.svg"
-                                          alt="arrow"
-                                          className={`w-4 h-4 transition-transform duration-200 ${activeSubLink === link.title ? 'rotate-180' : ''}`}
-                                        /> */}
-                                      </button>
-
-                                      {/* <div className={`overflow-hidden transition-all duration-300 ${activeSubLink === link.title ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-                                        <ul className="ml-4 mt-2 space-y-1">
-                                          {link.subLinks.map((subLink, subIndex) => (
-                                            <li key={subIndex}>
-                                              <a href="" className="block text-sm font-normal text-[#FFFFFF]/70 hover:text-[#FFFFFF] py-1 pl-2 border-l-2 border-transparent hover:border-[#FFFFFF] transition-all duration-200 sansFlex">
-                                                {subLink}
-                                              </a>
-                                            </li>
-                                          ))}
-                                        </ul>
-                                      </div> */}
+                                      </Link>
                                     </li>
                                   ))}
                                 </ul>

@@ -5,7 +5,7 @@ import menuData from "./menuData";
 import DesktopMenu from "./DesktopMenu";
 import MobileDrawer from "./MobileDrawer";
 import Link from "next/link";
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 
 const NewHeaderComponent = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -57,16 +57,39 @@ const NewHeaderComponent = () => {
             })}
           </div>
 
-                    <div className='max-[1100px]:hidden flex gap-[16px] h-full'>
-            <Link href="" className='text-xs xl:text-sm h-full flex items-center min-[1400px]:!text-base leading-[20px] font-medium text-[#FFFFFF] whitespace-nowrap'> Add-Ons</Link>
+          <div className="max-[1100px]:hidden flex gap-[16px] h-full">
+            <Link
+              href=""
+              className="text-xs xl:text-sm h-full flex items-center min-[1400px]:!text-base leading-[20px] font-medium text-[#FFFFFF] whitespace-nowrap"
+            >
+              {" "}
+              Add-Ons
+            </Link>
 
-            <Link href="" className='text-xs xl:text-sm h-full flex items-center min-[1400px]:!text-base leading-[20px] font-medium text-[#FFFFFF] whitespace-nowrap'>About</Link>
+            <Link
+              href=""
+              className="text-xs xl:text-sm h-full flex items-center min-[1400px]:!text-base leading-[20px] font-medium text-[#FFFFFF] whitespace-nowrap"
+            >
+              About
+            </Link>
 
             <Menu as="div" className="relative inline-block">
-              <MenuButton className="flex text-xs xl:text-sm h-full flex items-center min-[1400px]:!text-base leading-[20px] font-medium text-[#ffffff] whitespace-nowrap gap-[4px] outline-none border-0 cursor-pointer" >
+              <MenuButton className="flex text-xs xl:text-sm h-full flex items-center min-[1400px]:!text-base leading-[20px] font-medium text-[#ffffff] whitespace-nowrap gap-[4px] outline-none border-0 cursor-pointer">
                 More
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 7.5L10 12.5L15 7.5"
+                    stroke="white"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </MenuButton>
 
@@ -76,13 +99,12 @@ const NewHeaderComponent = () => {
               >
                 <div className="">
                   <MenuItem>
-                    <a
-                      href="#"
+                    <Link
+                      href="/faq"
                       className="block text-[20px] leading-[24px] font-medium text-[#5E17EB] p-[12px_24px] hover:bg-[#5E17EB1A]"
                     >
                       FAQs
-
-                    </a>
+                    </Link>
                   </MenuItem>
                   <MenuItem>
                     <a
@@ -90,7 +112,6 @@ const NewHeaderComponent = () => {
                       className="block text-[20px] leading-[24px] font-medium text-[#5E17EB] p-[12px_24px] hover:bg-[#5E17EB1A]"
                     >
                       Blog
-
                     </a>
                   </MenuItem>
                   <MenuItem>
@@ -101,34 +122,42 @@ const NewHeaderComponent = () => {
                       Contact us
                     </a>
                   </MenuItem>
-
                 </div>
               </MenuItems>
             </Menu>
-
           </div>
         </div>
 
         {/* Desktop Action Buttons */}
-        <div className='flex items-center ms-auto max-[1100px]:hidden gap-[12px]'>
-          <Link href="/create-account" className='h-[51px] p-[12px_16px] min-[1400px]:!p-[15px_27px] text-xs xl:text-sm leading-[none] font-bold text-[#FFFFFF] transition-all duration-200 hover:bg-[#ffffff]/10 rounded-[999px] border-[2px] border-solid border-[#FFFFFF] min-h-[51px] items-center justify-center flex whitespace-nowrap'>
+        <div className="flex items-center ms-auto max-[1100px]:hidden gap-[12px]">
+          <Link
+            href="/create-account"
+            className="h-[51px] p-[12px_16px] min-[1400px]:!p-[15px_27px] text-xs xl:text-sm leading-[none] font-bold text-[#FFFFFF] transition-all duration-200 hover:bg-[#ffffff]/10 rounded-[999px] border-[2px] border-solid border-[#FFFFFF] min-h-[51px] items-center justify-center flex whitespace-nowrap"
+          >
             Create Account
           </Link>
-          <Link href="/apply-quad" className='h-[51px] p-[12px_16px] min-[1400px]:!p-[15px_27px] text-xs xl:text-sm leading-[none] font-bold text-[#FFFFFF] transition-all duration-200 hover:bg-[#1F232E]/90 block bg-[#1F232E] rounded-[999px] border border-solid border-[#00000000] gap-[10px] group min-h-[51px] items-center justify-center flex whitespace-nowrap'>
+          <Link
+            href="/apply-quad"
+            className="h-[51px] p-[12px_16px] min-[1400px]:!p-[15px_27px] text-xs xl:text-sm leading-[none] font-bold text-[#FFFFFF] transition-all duration-200 hover:bg-[#1F232E]/90 block bg-[#1F232E] rounded-[999px] border border-solid border-[#00000000] gap-[10px] group min-h-[51px] items-center justify-center flex whitespace-nowrap"
+          >
             Apply to The Quad
-            <img src="/img/btn-arrow.svg" alt="" className='group-hover:translate-x-[2px] group-hover:-translate-y-[2px] transition-all duration-200' />
+            <img
+              src="/img/btn-arrow.svg"
+              alt=""
+              className="group-hover:translate-x-[2px] group-hover:-translate-y-[2px] transition-all duration-200"
+            />
           </Link>
         </div>
 
         {/* Mobile Hamburger Button */}
         <button
           onClick={toggleDrawer}
-          className='min-[1051px]:hidden ml-auto p-2 flex flex-col justify-center items-center w-8 h-8 space-y-1 cursor-pointer'
+          className="min-[1051px]:hidden ml-auto p-2 flex flex-col justify-center items-center w-8 h-8 space-y-1 cursor-pointer"
           aria-label="Toggle menu"
         >
-          <span className='block w-6 h-[2px] bg-[#FFFFFF] transition-all duration-300'></span>
-          <span className='block w-6 h-[2px] bg-[#FFFFFF] transition-all duration-300'></span>
-          <span className='block w-6 h-[2px] bg-[#FFFFFF] transition-all duration-300'></span>
+          <span className="block w-6 h-[2px] bg-[#FFFFFF] transition-all duration-300"></span>
+          <span className="block w-6 h-[2px] bg-[#FFFFFF] transition-all duration-300"></span>
+          <span className="block w-6 h-[2px] bg-[#FFFFFF] transition-all duration-300"></span>
         </button>
       </header>
 

@@ -1,13 +1,15 @@
 import React, { Suspense } from 'react'
-import ForParents from '../../Components/ForParents'
+import Faq from '@/Components/Faq'
 import ForParentsSkeleton from '@/utilities/Loader/ForParentsSkeleton'
 
-const ForParentsPage = () => {
+const FaqPage = () => {
   return (
+    <>
     <Suspense fallback={<ForParentsSkeleton />}>
-      <ForParents/>
-    </Suspense>
+      <Faq/>
+    </Suspense> 
+    </>
   )
 }
 
-export default ForParentsPage
+export default FaqPage

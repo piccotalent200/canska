@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import ReactPaginate from 'react-paginate';
+
 import ScrollAnimatedElement from '../../Reusable/ScrollAnimatedElement';
 import { universityData } from '@/utilities/constants';
 
@@ -26,19 +26,15 @@ const Top50Universities = () => {
     const urlTab = searchParams.get('rankTab');
     const initialTab = urlTab ? parseInt(urlTab, 10) : 0;
     const [activeSubTab, setActiveSubTab] = useState(initialTab);
-    const [itemOffset, setItemOffset] = useState(0);
 
-    // Inner Pagination State (Limit 5 items per page)
-    const itemsPerPage = 5;
+    // Tab Data (Show all 10 universities per rank tab)
     const tabStartIndex = activeSubTab * 10;
     const tabEndIndex = tabStartIndex + 10;
-    const currentTabUniversities = universityData.slice(tabStartIndex, tabEndIndex);
-    const displayedUniversities = currentTabUniversities.slice(itemOffset, itemOffset + itemsPerPage);
-    const pageCount = Math.ceil(currentTabUniversities.length / itemsPerPage);
-
+    const displayedUniversities = universityData.slice(tabStartIndex, tabEndIndex);
+    
     // Global Rank Calculations for the Result Tracker text
-    const displayStartRank = tabStartIndex + itemOffset + 1;
-    const displayEndRank = Math.min(tabStartIndex + itemOffset + itemsPerPage, universityData.length);
+    const displayStartRank = tabStartIndex + 1;
+    const displayEndRank = Math.min(tabEndIndex, universityData.length);
    
 
     useEffect(() => {
@@ -50,25 +46,13 @@ const Top50Universities = () => {
         }
     }, [urlTab, tabs.length]);
 
-    // Reset pagination to page 1 whenever the main tab category changes
+    // Reset to show all universities in the selected rank tab
     const handleSubTabChange = (index) => {
         setActiveSubTab(index);
-        setItemOffset(0);
 
         const params = new URLSearchParams(searchParams.toString());
         params.set('rankTab', index.toString());
         router.push(`${pathname}?${params.toString()}`, { scroll: false });
-
-        if (subTabsRef.current) {
-            const yOffset = -160;
-            const yPosition = subTabsRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({ top: yPosition, behavior: 'smooth' });
-        }
-    };
-
-    const handlePageClick = (event) => {
-        const newOffset = (event.selected * itemsPerPage) % currentTabUniversities.length;
-        setItemOffset(newOffset);
 
         if (subTabsRef.current) {
             const yOffset = -160;
@@ -108,7 +92,7 @@ const Top50Universities = () => {
                         priority
                         className="object-cover object-center absolute w-full h-full"
                     />
-                    <h1 className='text-[48px] leading-[48px] font-bold text-[#FFFFFF] relative z-[1]'>TOP 50 Universities</h1>
+                    <h1 className='text-[48px] leading-[48px] font-bold text-[#FFFFFF] relative z-1'>TOP 50 Universities</h1>
                     <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0)),linear-gradient(90deg,rgba(45,11,112,0.85)_0%,rgba(45,11,112,0.55)_50%,rgba(45,11,112,0.15)_100%)] mix-blend-multiply" />
                 </div>
                 <p className='text-base leading-[24px] font-normal text-[#0A0A0A] mb-2 max-w-[896px]'>
@@ -201,23 +185,22 @@ const Top50Universities = () => {
                     ))}
 
 
-                {/* Pagination matching your design circles layout */}
-                <ReactPaginate
-                    previousLabel={null}
-                    nextLabel={null}
-                    breakLabel="..."
-                    pageCount={pageCount}
-                    marginPagesDisplayed={1}
-                    pageRangeDisplayed={3}
-                    onPageChange={handlePageClick}
-                    forcePage={Math.floor(itemOffset / itemsPerPage)}
-                    containerClassName="flex items-center justify-center gap-5"
-                    pageClassName="block"
-                    pageLinkClassName="flex items-center cursor-pointer justify-center w-7 h-7 rounded-full bg-[#F4F1FE] text-[#5E17EB] text-xs font-bold transition-all duration-200 hover:bg-[#5E17EB]/10"
-                    activeLinkClassName="!bg-[#5E17EB] !text-[#FFFFFF] shadow-sm"
-                    breakClassName="text-gray-400 font-bold px-1"
-                    disabledClassName="opacity-40 pointer-events-none"
-                />
+                {/* Pagination-style tab navigation at bottom - matches rank tabs */}
+                <div className="flex items-center justify-center gap-5">
+                    {tabs.map((tab, index) => (
+                        <button
+                            key={tab.id}
+                            onClick={() => handleSubTabChange(index)}
+                            className={`flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold transition-all duration-200 cursor-pointer ${
+                                activeSubTab === index
+                                    ? 'bg-[#5E17EB] text-[#FFFFFF] shadow-sm'
+                                    : 'bg-[#F4F1FE] text-[#5E17EB] hover:bg-[#5E17EB]/10'
+                            }`}
+                        >
+                            {index + 1}
+                        </button>
+                    ))}
+                </div>
                 </div>
 
 
@@ -226,7 +209,7 @@ const Top50Universities = () => {
             {/* Next Up / CTA Section */}
             <ScrollAnimatedElement direction="up" delay={0.15}>
                 <section className="w-full p-[20px_16px_60px_16px] sm:p-[29px_32px_80px_32px] lg:p-[56px] flex items-center bg-[#5E17EB] text-white rounded-[24px] relative overflow-hidden">
-                    <div className="absolute w-[400px] h-[400px] -top-[12px] -left-[200px] bg-[#FFFFFF1A] blur-[64px] rounded-full z-30 pointer-events-none" />
+                    <div className="absolute w-[400px] h-[400px] top-[-12px] left-[-200px] bg-[#FFFFFF1A] blur-3xl rounded-full z-30 pointer-events-none" />
                     <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-12">
                         <div className="flex flex-col max-w-[880px] gap-[12px]">
                             <span className="text-[#FFB433] text-sm font-bold tracking-[2.42px] uppercase leading-[16px]">
@@ -239,7 +222,7 @@ const Top50Universities = () => {
                                 Parenting is the ultimate long-term investment...
                             </p>
                         </div>
-                        <div className="flex-shrink-0 self-start md:self-auto pt-4 md:pt-0">
+                        <div className="shrink-0 self-start md:self-auto pt-4 md:pt-0">
                             <Link
                                 href="/quad-lesson"
                                 className="inline-flex items-center gap-2.5 bg-[#FFB433] text-[#2D0B70] px-[25.8px] py-[13.8px] min-w-[201px] h-[50.6px] rounded-full font-semibold text-base leading-[24px] tracking-[-0.14px] hover:bg-[#e09d2a] transition-all duration-200 group"
