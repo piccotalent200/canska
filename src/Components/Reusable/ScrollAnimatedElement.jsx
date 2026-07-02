@@ -1,6 +1,41 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
-import { animate, inView } from 'motion'
+
+// Fallback animation for cases where motion library might have issues
+const fallbackAnimate = (element, keyframes, options = {}) => {
+  if (!element) return
+  
+  const { duration = 0.5, delay = 0 } = options
+  
+  setTimeout(() => {
+    element.style.transition = `all ${duration}s ease-out`
+    element.style.opacity = '1'
+    element.style.transform = 'translateY(0px)'
+  }, delay * 1000)
+}
+
+const fallbackInView = (element, callback, options = {}) => {
+  if (!element || typeof IntersectionObserver === 'undefined') {
+    // Fallback for server-side rendering
+    setTimeout(callback, 100)
+    return () => {}
+  }
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        callback()
+        observer.unobserve(element)
+      }
+    })
+  }, options)
+  
+  observer.observe(element)
+  
+  return () => {
+    observer.disconnect()
+  }
+}
 
 const ScrollAnimatedElement = ({ 
   children, 
@@ -28,6 +63,19 @@ const ScrollAnimatedElement = ({
     // Set initial state only after hydration
     element.style.opacity = '0'
     element.style.transform = `translateY(${yOffset}px)`
+
+    let animate, inView
+    
+    // Try to import motion library, fallback to native implementation
+    try {
+      const motionModule = require('motion')
+      animate = motionModule.animate
+      inView = motionModule.inView
+    } catch (error) {
+      console.warn('Motion library not available, using fallback animation')
+      animate = fallbackAnimate
+      inView = fallbackInView
+    }
 
     // Create animation when element comes into view
     const cleanup = inView(element, () => {
