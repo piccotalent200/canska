@@ -119,9 +119,10 @@ const TheStrategicValue = () => {
                                 <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-brandDark mb-4">
                                     Competition Strategy and Profile Validation
                                 </h2>
-                                <p className="font-medium text-base leading-[24px] text-brandDark/80 mb-6">
+                                <p className="font-medium text-base leading-[24px] text-brandDark/80">
                                     Olympiads, hackathons, awards — third-party validations of every claim in the portfolio.
                                 </p>
+                                <hr className="border-[#EDE7FB] my-4 block" />
                                 <div className="font-medium text-sm leading-[25px] text-brandDark">
                                     <p>
                                         The Canska ecosystem enables a robust culture of excellence through national and international competitions. Students are encouraged and instructed to participate in academic and co-curricular challenges that push their boundaries. These competitions are essential "stress tests" for the student’s profile, providing external validation of their skills, passion, creativity, adaptability, and perseverance.

@@ -3,25 +3,25 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 
-const AdmissionsInsights = () => {
+const StudentWorkloadPolicy = () => {
   return (
      <>
         <section className="w-full p-[20px_16px_60px_16px] sm:p-[40px_32px_80px_32px] lg:p-[64px_61px_99px] bg-[#FAFAFC]">
             <ScrollAnimatedElement direction="up" delay={0.1}>
                 <div className="relative w-full h-[200px] md:h-[220px] rounded-3xl overflow-hidden mb-[24px] grid items-center p-[86px_48px]">
                     <Image
-                        src="/img/admission-insights-banner.svg"
+                        src="/img/student-workload-policy-banner.svg"
                         alt="Admissions Insights"
                         fill
                         priority
                         className="object-cover object-center absolute w-full h-full"
                     />
-                    <h1 className='text-[48px] leading-[48px] font-bold text-[#FFFFFF] relative z-[1]'>Admissions Insights</h1> 
+                    <h1 className='text-[48px] leading-[48px] font-bold text-[#FFFFFF] relative z-[1]'>Student Workload Policy</h1> 
                     <div className='absolute inset-0 bg-[linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0)),linear-gradient(90deg,rgba(45,11,112,0.85)_0%,rgba(45,11,112,0.55)_50%,rgba(45,11,112,0.15)_100%)] mix-blend-multiply'></div>
                 </div>
 
                 <p className='text-base leading-[24px] font-normal text-[#0A0A0A] mb-[42px]'>
-                    Top global universities are embracing hyper-holistic evaluation — prioritising specialised expertise and global impact over general academic achievement. Students must demonstrate a "spiky profile" and prove their potential as a high- return investment.
+                    At Canska we don't view workload as a hurdle to be jumped — but as a resource to be managed. Life-Work Integration over Life-Work Balance.
                 </p>
 
             </ScrollAnimatedElement>
@@ -46,18 +46,18 @@ const AdmissionsInsights = () => {
                         </div>
 
                         <h1 className="font-extrabold text-2xl sm:text-3xl lg:text-[30px] leading-snug sm:leading-[36px] tracking-tight mb-4">
-                            Hyper-holistic Evaluation
+                            The Foundation of Purpose-Driven Load
                         </h1>
 
                         <p className="font-medium text-base text-white/90 leading-[27px]">
-                            Admissions look beyond grades — into projects, character, narrative arc, and global impact.
+                            Load is justified only by clear purpose tied to the Spike or values.
                         </p>
 
                         <hr className="border-white/10 my-4" />
 
                         <div className="font-medium text-sm text-[#FFFFFF] leading-[25px] space-y-4">
                             <p>
-                                In the admissions landscape, the top 50 global universities led by institutions such as Oxford, Cambridge, and Imperial College London have transitioned toward a hyper-holistic evaluation model. For students seeking high-value scholarships between US$ 60,000 and US$400,000, academic excellence is no longer a major differentiator but a prerequisite. Elite institutions now utilise AI-assisted screening to filter for a minimum unweighted GPA of 3.9 and standardised test scores in the top 1 percentile. However, the key admissions insight for this tier is that data points alone do not secure funding. To unlock substantial merit-based or need-blind aid, a candidate must demonstrate a spiky profile. This refers to a singular and deep expertise in a specific niche rather than being a well-rounded generalist. This specialised excellence indicates to admissions officers and scholarship committees that the student is a high-return investment fit for the university’s future legacy and international standing.
+                                Canska refuses busywork. Every assigned task, every lesson, every project must be defended by a clear purpose: does it build the Spike, develop core values, or sustain academic foundations? If none — it is cut. The result: a workload that feels meaningful, not heavy, even at advanced levels of rigor.
                             </p>
 
                         </div>
@@ -66,18 +66,18 @@ const AdmissionsInsights = () => {
                     <main className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-start">
 
 
-                        <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
+                        <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between col-start-1 col-end-3">
                             <div>
                                 <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-[#0A0A0A] mb-4">
-                                    AI-Assisted Screening
+                                    The Pillars of the Policy
                                 </h2>
                                 <p className="font-medium text-base leading-[24px] text-[#0A0A0A]">
-                                    Many universities pre-screen via AI — clean digital footprint and verifiable claims matter more than ever.
+                                    Structural integrity, weekend protection, differentiated scaling, safety scaffolding.
                                 </p>
                                 <hr className="border-[#EDE7FB] my-4 block" />
                                 <div className="font-medium text-sm leading-[25px] text-[#0A0A0A] space-y-4">
                                     <p>
-                                        The pre-screen AI flags inconsistency: a claim that contradicts a transcript, a portfolio piece that smells AI-generated, a digital footprint that lacks coherence. Canska students pass these filters effortlessly because their portfolio has been built honestly, quarter by quarter, over a decade — every claim independently verifiable.
+                                        The Canska Workload Policy rests on four pillars: structural daily limits, protected weekends, age-differentiated scaling, and continuous safety scaffolding. Together these prevent burnout, preserve childhood, and ensure the rigour students experience strengthens them rather than crushing them.
                                     </p>
 
                                 </div>
@@ -87,16 +87,16 @@ const AdmissionsInsights = () => {
                         <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
                             <div>
                                 <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-[#0A0A0A] mb-4">
-                                    Spiky Profile
+                                    1. The Structural Integrity Limit
                                 </h2>
                                 <p className="font-medium text-base leading-[24px] text-[#0A0A0A]">
-                                    Depth in one area beats breadth in five. Spike = signal.
+                                    Hard caps on daily focus minutes — protect mental health, energy, and joy.
                                 </p>
                                 <hr className="border-[#EDE7FB] my-4 block" />
                                 <div className="font-medium text-sm leading-[25px] text-[#0A0A0A] space-y-4">
                                     <p>
-                                        Universities used to want "well-rounded". They now want "angular". A student who has won three national-level awards in marine biology will out-compete a student with five clubs and no spike. Canska's whole architecture is built to produce angular, defensible, verifiable spikes in fields that align with each student's authentic interest.
-                                        </p>
+                                        Each age phase has a documented daily focus-minute cap — Seekers 60–90 minutes, Makers 120–150 minutes, Risers 180–210 minutes, Flyers 240–270 minutes. These are hard caps, not soft targets. Mentors do not override them; parents do not extend them. Mental health, energy, and joy are protected by the integrity of these limits.
+                                    </p>
                                 </div>
                             </div>
                         </section>
@@ -104,16 +104,84 @@ const AdmissionsInsights = () => {
                         <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
                             <div>
                                 <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-brandDark mb-4">
-                                    Global-Scale Impact
+                                    2. The No-Homework Weekends
                                 </h2>
                                 <p className="font-medium text-base leading-[24px] text-brandDark/80">
-                                    Did your work touch hundreds, thousands, or millions? Scale is the new SAT.
+                                    Weekends are for family, rest, and self-directed play. Always.
                                 </p>
                                 <hr className="border-[#EDE7FB] my-4 block" />
                                 <div className="font-medium text-sm leading-[25px] text-brandDark">
                                     <p>
-                                        Where SAT scores once dominated, scale now dominates. Did your essay get published? Did your app get users? Did your campaign change policy? Did your YouTube channel teach 50,000 students? Canska students learn to design projects with built-in scalability from the Risers phase onward, making impact a measurable line in the portfolio.
-                                        </p>
+                                        Saturdays and Sundays carry zero structured Canska assignments. The weekend belongs to family time, rest, sport, art for art's sake, and self-directed play. Research consistently shows that the brain's deepest consolidation happens during true rest — and Canska respects the science.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
+                            <div>
+                                <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-[#0A0A0A] mb-4">
+                                    3. Differentiated Scaling and Load Levelling
+                                </h2>
+                                <p className="font-medium text-base leading-[24px] text-[#0A0A0A]">
+                                    Workload personalised by age, capacity, and life context — never one-size-fits-all.
+                                </p>
+                                <hr className="border-[#EDE7FB] my-4 block" />
+                                <div className="font-medium text-sm leading-[25px] text-[#0A0A0A] space-y-4">
+                                    <p>
+                                        A child recovering from an illness, navigating a family transition, or peaking for a major competition has different capacity than a child in steady state. Canska mentors continuously level-set the workload based on the child's age, current capacity, and life context — eliminating the destructive assumption that all students of a given age should carry identical loads.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
+                            <div>
+                                <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-brandDark mb-4">
+                                    4.  Protecting the Builder through Safety Scaffolding
+                                </h2>
+                                <p className="font-medium text-base leading-[24px] text-brandDark/80">
+                                    Mentor support, peer pods, parental check-ins — students never carry weight alone.
+                                </p>
+                                <hr className="border-[#EDE7FB] my-4 block" />
+                                <div className="font-medium text-sm leading-[25px] text-brandDark">
+                                    <p>
+                                        When the workload intensifies — Flyers phase, scholarship season, exam blocks — the safety scaffolding tightens around the student. Mentor calls become more frequent, peer pods activate, parental check-ins are formalised. No Canska student is allowed to carry heavy weight in isolation; the architecture quietly redistributes the load.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
+                            <div>
+                                <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-[#0A0A0A] mb-4">
+                                    The Yellow Flag System
+                                </h2>
+                                <p className="font-medium text-base leading-[24px] text-[#0A0A0A]">
+                                    Early warning indicators trigger intervention before burnout.
+                                </p>
+                                <hr className="border-[#EDE7FB] my-4 block" />
+                                <div className="font-medium text-sm leading-[25px] text-[#0A0A0A] space-y-4">
+                                    <p>
+                                        Canska's analytics watch for the early warning signs: missed deadlines, drop in lesson velocity, change in journal sentiment, reduction in voluntary projects. When indicators turn yellow, the mentor initiates a structured check-in — not a punishment, but a recalibration — preventing yellow flags from becoming red ones.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
+                            <div>
+                                <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-brandDark mb-4">
+                                    Digital Wellness Guardrails
+                                </h2>
+                                <p className="font-medium text-base leading-[24px] text-brandDark/80">
+                                    Screen-time discipline, deep-work windows, dopamine hygiene.
+                                </p>
+                                <hr className="border-[#EDE7FB] my-4 block" />
+                                <div className="font-medium text-sm leading-[25px] text-brandDark">
+                                    <p>
+                                        Canska teaches students to architect their relationship with screens. Specific deep- work windows are device-free; specific recovery windows are device-permitted but content-curated. Notifications are silenced during learning; dopamine hygiene — clean breaks between dopamine-rich content and study — is taught explicitly from the Makers phase onward.
+                                    </p>
                                 </div>
                             </div>
                         </section>
@@ -141,18 +209,18 @@ const AdmissionsInsights = () => {
                         </div>
 
                         <h1 className="font-extrabold text-2xl sm:text-3xl lg:text-[30px] leading-snug sm:leading-[36px] tracking-tight mb-4">
-                            Intellectual Vitality
+                            The Emotional Connect: Why We Limit the Load
                         </h1>
 
                         <p className="font-medium text-base text-white/90 leading-[27px]">
-                            Self-directed learning beyond syllabus — proof of curiosity is proof of fit.
+                            Children are humans first. The Spike is built on a happy, healthy person — never the reverse.
                         </p>
 
                         <hr className="border-white/10 my-4" />
 
                         <div className="font-medium text-sm text-[#FFFFFF] leading-[25px] space-y-4">
                             <p>
-                                Intellectual vitality is the single quality elite universities cannot fake-test. They look for evidence that a student reads books no teacher assigned, watches lectures no school requires, asks questions no rubric anticipates. Canska's microlearning system documents exactly this — a verifiable record of self-directed intellectual hunger.
+                                Some programs build elite students by hollowing out the human. Canska refuses. The Spike is built on a foundation of joy, rest, friendship, and curiosity — never on its destruction. The day a student's eyes go dull is the day Canska intervenes, regardless of where the application calendar sits.
                             </p>
 
                         </div>
@@ -164,15 +232,15 @@ const AdmissionsInsights = () => {
                         <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
                             <div>
                                 <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-[#0A0A0A] mb-4">
-                                    Need-Blind vs. Need-Aware Institutions
+                                    The Canska Perspective
                                 </h2>
                                 <p className="font-medium text-base leading-[24px] text-[#0A0A0A]">
-                                    Strategy differs by category — choose the lane that maximises both fit and award.
+                                    Excellence without exhaustion. Mastery without misery. It is possible.
                                 </p>
                                 <hr className="border-[#EDE7FB] my-4 block" />
                                 <div className="font-medium text-sm leading-[25px] text-[#0A0A0A] space-y-4">
                                     <p>
-                                        Need-blind universities (a small elite club) consider you regardless of ability to pay; need-aware universities factor your financial profile into the admit decision. The two require very different application strategies. Canska maps each student's shortlist precisely across both categories to maximise both fit and scholarship yield.
+                                        The conventional wisdom says elite outcomes require punishing inputs. Canska's perspective, born from a decade of evidence: excellence without exhaustion is achievable through structure, sequence, and steady cadence over years — not through brutal intensity over months. Mastery without misery is the program's quiet revolution.
                                     </p>
 
                                 </div>
@@ -182,32 +250,15 @@ const AdmissionsInsights = () => {
                         <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
                             <div>
                                 <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-[#0A0A0A] mb-4">
-                                    Grit
+                                    The Student Promise
                                 </h2>
                                 <p className="font-medium text-base leading-[24px] text-[#0A0A0A]">
-                                    Stories of perseverance through documented setbacks — never manufactured, always cited.
+                                    We promise to protect your child's spark — even from our own program.
                                 </p>
                                 <hr className="border-[#EDE7FB] my-4 block" />
                                 <div className="font-medium text-sm leading-[25px] text-[#0A0A0A] space-y-4">
                                     <p>
-                                        Grit is the cult metric of modern admissions. Officers want documented setbacks — a competition lost, a project pivoted, an illness navigated — and documented recovery. Canska students don't manufacture grit; the 12-year program produces real setbacks, and the mentor ensures each one is captured and contextualised in the portfolio.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
-                            <div>
-                                <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-brandDark mb-4">
-                                    Narrative Arc
-                                </h2>
-                                <p className="font-medium text-base leading-[24px] text-brandDark/80">
-                                    Your file is a story. A coherent arc beats a list of achievements.
-                                </p>
-                                <hr className="border-[#EDE7FB] my-4 block" />
-                                <div className="font-medium text-sm leading-[25px] text-brandDark">
-                                    <p>
-                                        The strongest applications read like short stories. They have a thematic spine, a protagonist with a recognisable voice, a series of escalating challenges, and a meaningful resolution that points forward. Canska essay coaching trains every student to think narratively — even on resume bullets, scholarship answers, and interview replies.
+                                        The most important promise Canska makes to every parent: we will protect your child's spark, even when our own program is the threat to it. If the curriculum, the workload, or the mentor begins to dim your child's natural light, we slow down, recalibrate, or pause — because the spark is what makes everything that follows possible.
                                     </p>
                                 </div>
                             </div>
@@ -219,162 +270,7 @@ const AdmissionsInsights = () => {
             </div>
 
 
-            <div className="mx-auto space-y-5 mb-[40px] last:mb-0">
-                    <div className="w-full bg-gradient-to-br from-[#2D0B70] via-[#5E17EB] to-[#4A11C0] rounded-[24px] p-6 sm:p-10 text-white relative overflow-hidden">
-                        <div className="mb-4">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.9" clipPath="url(#clip0_984_2853)">
-                                    <path d="M24 4.5C23.2044 4.5 22.4413 4.81607 21.8787 5.37868C21.3161 5.94129 21 6.70435 21 7.5V16.5C21 17.2956 21.3161 18.0587 21.8787 18.6213C22.4413 19.1839 23.2044 19.5 24 19.5C24.3978 19.5 24.7794 19.658 25.0607 19.9393C25.342 20.2206 25.5 20.6022 25.5 21V22.5C25.5 23.2956 25.1839 24.0587 24.6213 24.6213C24.0587 25.1839 23.2956 25.5 22.5 25.5C22.1022 25.5 21.7206 25.658 21.4393 25.9393C21.158 26.2206 21 26.6022 21 27V30C21 30.3978 21.158 30.7794 21.4393 31.0607C21.7206 31.342 22.1022 31.5 22.5 31.5C24.8869 31.5 27.1761 30.5518 28.864 28.864C30.5518 27.1761 31.5 24.8869 31.5 22.5V7.5C31.5 6.70435 31.1839 5.94129 30.6213 5.37868C30.0587 4.81607 29.2956 4.5 28.5 4.5H24Z" stroke="#FFB433" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M7.5 4.5C6.70435 4.5 5.94129 4.81607 5.37868 5.37868C4.81607 5.94129 4.5 6.70435 4.5 7.5V16.5C4.5 17.2956 4.81607 18.0587 5.37868 18.6213C5.94129 19.1839 6.70435 19.5 7.5 19.5C7.89782 19.5 8.27936 19.658 8.56066 19.9393C8.84196 20.2206 9 20.6022 9 21V22.5C9 23.2956 8.68393 24.0587 8.12132 24.6213C7.55871 25.1839 6.79565 25.5 6 25.5C5.60218 25.5 5.22064 25.658 4.93934 25.9393C4.65804 26.2206 4.5 26.6022 4.5 27V30C4.5 30.3978 4.65804 30.7794 4.93934 31.0607C5.22064 31.342 5.60218 31.5 6 31.5C8.38695 31.5 10.6761 30.5518 12.364 28.864C14.0518 27.1761 15 24.8869 15 22.5V7.5C15 6.70435 14.6839 5.94129 14.1213 5.37868C13.5587 4.81607 12.7956 4.5 12 4.5H7.5Z" stroke="#FFB433" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_984_2853">
-                                        <rect width="36" height="36" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-
-                        </div>
-
-                        <h1 className="font-extrabold text-2xl sm:text-3xl lg:text-[30px] leading-snug sm:leading-[36px] tracking-tight mb-4">
-                            Institutional Fit
-                        </h1>
-
-                        <p className="font-medium text-base text-white/90 leading-[27px]">
-                            Match values and culture — students who fit thrive, and admissions can sense it.
-                        </p>
-
-                        <hr className="border-white/10 my-4" />
-
-                        <div className="font-medium text-sm text-[#FFFFFF] leading-[25px] space-y-4">
-                            <p>
-                                Officers don't just admit qualified candidates; they admit candidates who will thrive on their specific campus. Stanford wants entrepreneurial energy; Oxford wants academic intensity; MIT wants technical depth. Canska reads each institution's culture and aligns the student's narrative so the application fits like a tailored suit, not an off-the-rack jacket.
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <main className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-start">
-
-
-                        <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
-                            <div>
-                                <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-[#0A0A0A] mb-4">
-                                    Vulnerability with Major Purpose
-                                </h2>
-                                <p className="font-medium text-base leading-[24px] text-[#0A0A0A]">
-                                    Strategic vulnerability builds connection — but always serves the larger narrative.
-                                </p>
-                                <hr className="border-[#EDE7FB] my-4 block" />
-                                <div className="font-medium text-sm leading-[25px] text-[#0A0A0A] space-y-4">
-                                    <p>
-                                        Strategic vulnerability — a setback shared, a fear named — humanises an applicant. But vulnerability without purpose feels manipulative. Canska essay coaches ensure that every personal disclosure serves the larger narrative: it shows growth, demonstrates self-awareness, or unlocks the spike.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </section>
-
-                        <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
-                            <div>
-                                <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-[#0A0A0A] mb-4">
-                                    Standardized Testing Re-institutionalisation
-                                </h2>
-                                <p className="font-medium text-base leading-[24px] text-[#0A0A0A]">
-                                    Many top schools reinstated tests. Build the score quietly, over years.
-                                </p>
-                                <hr className="border-[#EDE7FB] my-4 block" />
-                                <div className="font-medium text-sm leading-[25px] text-[#0A0A0A] space-y-4">
-                                    <p>
-                                        Many universities are quietly reinstating SAT/ACT requirements. Last-minute test prep produces panic and mediocrity. Canska builds the underlying reading speed, mathematical fluency, and vocabulary over a decade — so the final test is a confirmation of years of preparation, not a high-stakes exam taken under duress.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
-                            <div>
-                                <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-brandDark mb-4">
-                                    Demonstrated Interest
-                                </h2>
-                                <p className="font-medium text-base leading-[24px] text-brandDark/80">
-                                    Newsletters, info sessions, campus visits, faculty correspondence — track every signal.
-                                </p>
-                                <hr className="border-[#EDE7FB] my-4 block" />
-                                <div className="font-medium text-sm leading-[25px] text-brandDark">
-                                    <p>
-                                        Universities track which applicants opened their newsletter, attended an info session, emailed a faculty member, visited campus. Canska students build a deliberate "interest signal trail" with each shortlisted university across the Flyers years — converting genuine curiosity into a documented application advantage.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-
-
-                    </main>
-
-            </div>
-
-
-            <div className="mx-auto space-y-5 mb-[40px] last:mb-0">
-                    <div className="w-full bg-gradient-to-br from-[#2D0B70] via-[#5E17EB] to-[#4A11C0] rounded-[24px] p-6 sm:p-10 text-white relative overflow-hidden">
-                        <div className="mb-4">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.9" clipPath="url(#clip0_984_2853)">
-                                    <path d="M24 4.5C23.2044 4.5 22.4413 4.81607 21.8787 5.37868C21.3161 5.94129 21 6.70435 21 7.5V16.5C21 17.2956 21.3161 18.0587 21.8787 18.6213C22.4413 19.1839 23.2044 19.5 24 19.5C24.3978 19.5 24.7794 19.658 25.0607 19.9393C25.342 20.2206 25.5 20.6022 25.5 21V22.5C25.5 23.2956 25.1839 24.0587 24.6213 24.6213C24.0587 25.1839 23.2956 25.5 22.5 25.5C22.1022 25.5 21.7206 25.658 21.4393 25.9393C21.158 26.2206 21 26.6022 21 27V30C21 30.3978 21.158 30.7794 21.4393 31.0607C21.7206 31.342 22.1022 31.5 22.5 31.5C24.8869 31.5 27.1761 30.5518 28.864 28.864C30.5518 27.1761 31.5 24.8869 31.5 22.5V7.5C31.5 6.70435 31.1839 5.94129 30.6213 5.37868C30.0587 4.81607 29.2956 4.5 28.5 4.5H24Z" stroke="#FFB433" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M7.5 4.5C6.70435 4.5 5.94129 4.81607 5.37868 5.37868C4.81607 5.94129 4.5 6.70435 4.5 7.5V16.5C4.5 17.2956 4.81607 18.0587 5.37868 18.6213C5.94129 19.1839 6.70435 19.5 7.5 19.5C7.89782 19.5 8.27936 19.658 8.56066 19.9393C8.84196 20.2206 9 20.6022 9 21V22.5C9 23.2956 8.68393 24.0587 8.12132 24.6213C7.55871 25.1839 6.79565 25.5 6 25.5C5.60218 25.5 5.22064 25.658 4.93934 25.9393C4.65804 26.2206 4.5 26.6022 4.5 27V30C4.5 30.3978 4.65804 30.7794 4.93934 31.0607C5.22064 31.342 5.60218 31.5 6 31.5C8.38695 31.5 10.6761 30.5518 12.364 28.864C14.0518 27.1761 15 24.8869 15 22.5V7.5C15 6.70435 14.6839 5.94129 14.1213 5.37868C13.5587 4.81607 12.7956 4.5 12 4.5H7.5Z" stroke="#FFB433" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_984_2853">
-                                        <rect width="36" height="36" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-
-                        </div>
-
-                        <h1 className="font-extrabold text-2xl sm:text-3xl lg:text-[30px] leading-snug sm:leading-[36px] tracking-tight mb-4">
-                            Global Engagement
-                        </h1>
-
-                        <p className="font-medium text-base text-white/90 leading-[27px]">
-                            Languages, exchanges, cross-cultural projects — global is the default expectation.
-                        </p>
-
-                        <hr className="border-white/10 my-4" />
-
-                        <div className="font-medium text-sm text-[#FFFFFF] leading-[25px] space-y-4">
-                            <p>
-                                Universities want students who are already globally engaged — not students who hope to become global once they arrive. Canska builds international engagement from the Makers phase onward: second/third languages, cross-cultural projects, international competitions, global mentor networks. By application time, global is the default mode.
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <main className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-start">
-
-
-                        <section className="bg-white border border-[#5E17EB]/40 rounded-[24px] p-6 sm:p-8 flex flex-col justify-between">
-                            <div>
-                                <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-[#0A0A0A] mb-4">
-                                    Timeline for Funding
-                                </h2>
-                                <p className="font-medium text-base leading-[24px] text-[#0A0A0A]">
-                                    Many awards are first-come — early decision strategy applies to money, too.
-                                </p>
-                                <hr className="border-[#EDE7FB] my-4 block" />
-                                <div className="font-medium text-sm leading-[25px] text-[#0A0A0A] space-y-4">
-                                    <p>
-                                        Most parents think "early decision" only applies to admit decisions. In fact, many scholarship pools award funds in order of submission — once depleted, even perfect candidates miss out. Canska's scholarship calendar treats funding timelines as strategically as admit timelines, ensuring every submission goes in early.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </section>
-
-
-                    </main>
-
-            </div>
+            
 
 
             <ScrollAnimatedElement direction="up" delay={0.15}>
@@ -398,7 +294,7 @@ const AdmissionsInsights = () => {
                             </div>
 
                             {/* Right Column: CTA Pill Action Component */}
-                            <div className="flex-shrink-0 flex max-sm:flex-col gap-[12px] self-start md:self-auto pt-4 md:pt-0 max-lg:w-full max-lg:justify-start lg:items-end flex-col">
+                            <div className="flex-shrink-0 flex  gap-[12px] self-start md:self-auto pt-4 md:pt-0 max-lg:w-full max-lg:justify-start lg:items-end">
                                 <Link
                                     href="/"
                                     className="inline-flex items-center gap-2.5 bg-[#FFB433] text-[#2D0B70] px-[25.8px] py-[13.8px] h-[50.6px] rounded-full font-semibold text-base leading-[24px] tracking-[-0.14px] hover:bg-[#e09d2a] transition-all duration-200 group"
@@ -443,4 +339,4 @@ const AdmissionsInsights = () => {
   )
 }
 
-export default AdmissionsInsights
+export default StudentWorkloadPolicy

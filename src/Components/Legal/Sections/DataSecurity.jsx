@@ -1,49 +1,6 @@
+import { dataSecurityNoticeData } from "@/utilities/constants";
 import React from "react";
-
-const dataSecurityNoticeData = [
-  {
-    id: 1,
-    hasSectionIcon: false,
-    title: "Purpose of Data Processing",
-    content: "We collect and process personal data to support our operations, manage our activities, and provide services that are necessary or requested[cite: 167]. Personal data will only be used for these purposes unless we provide advance notice of any additional use through official communication[cite: 168]."
-  },
-  {
-    id: 2,
-    hasSectionIcon: false,
-    title: "Sharing with Service Providers",
-    content: "We do not disclose personal data to unauthorised individuals or organisations[cite: 171]. Personal data may be shared with trusted third-party service providers where such disclosure is necessary for them to perform services on our behalf, including operational support, research activities, or service delivery[cite: 172]. Data may also be disclosed to funding bodies, regulatory authorities, or government agencies where required by applicable laws[cite: 173]."
-  },
-  {
-    id: 3,
-    hasSectionIcon: false,
-    title: "No Marketing Sale",
-    content: "We don't share, sell, trade, or otherwise disclose personal data to any organisation for marketing purposes or for financial or non-financial gain[cite: 174]."
-  },
-  {
-    id: 4,
-    hasSectionIcon: true, // Based on "S International Transfers" typo indicator
-    title: "International Transfers",
-    content: "Where personal data is transferred to third parties located in countries whose data protection laws may not provide the same level of protection as those in the United States of America or the European Economic Area, we implement appropriate technical, contractual, and organisational safeguards to ensure that personal data remains secure and adequately protected[cite: 176]."
-  },
-  {
-    id: 5,
-    hasSectionIcon: false,
-    title: "Communications and Consent",
-    content: "If you have provided consent to receive promotional or informational communications, we may occasionally contact you with updates regarding new services, activities, or relevant offerings from approved partners, as well as invitations to participate in surveys or educational research[cite: 179]. You may withdraw your consent and opt out at any time by following the unsubscribe instructions or contacting us[cite: 180]."
-  },
-  {
-    id: 6,
-    hasSectionIcon: false,
-    title: "Your Rights",
-    content: "You have the right to request access to the personal data we hold about you[cite: 183]. Subject to applicable laws, you may also have the right to request correction, updating, or deletion of your personal data where appropriate[cite: 184]."
-  },
-  {
-    id: 7,
-    hasSectionIcon: true,
-    title: "Updates",
-    content: "We may update this Data Protection Statement periodically[cite: 185]. The version in effect at the time your personal data is collected will govern how that data is processed[cite: 185]. For more information, please refer to our Privacy Policy[cite: 186]."
-  }
-];
+import Link from "next/link";
 
 
 const DataSecurity = () => {
@@ -67,7 +24,7 @@ const DataSecurity = () => {
           >
             {/* Header Left Column */}
             <div className="w-full md:w-[293px] shrink-0 pr-4 flex gap-[10px]">
-                   <span className="text-[#E8A23A]">§</span>
+                   
               <h3 className="text-[16.5px] font-normal leading-[27px] tracking-[-0.2px] text-[#0E1B2C]">
                 {section.title}
               </h3>
@@ -93,8 +50,8 @@ const DataSecurity = () => {
           </h4>
         </div>
 
-        <a
-          href="/contact"
+        <Link
+          href="/contact-us"
           className="inline-flex items-center justify-between gap-3 bg-[#5E17EB] border border-[#5E17EB] text-white px-8 h-[54px] rounded-full hover:bg-[#4d10c7] transition-all duration-200 group w-full md:w-auto"
         >
           <span className="text-[15.7px] font-medium tracking-wide">
@@ -114,7 +71,7 @@ const DataSecurity = () => {
               strokeLinejoin="round"
             />
           </svg>
-        </a>
+        </Link>
       </div>
     </article>
   );

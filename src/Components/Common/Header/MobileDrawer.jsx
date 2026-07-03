@@ -22,10 +22,12 @@ const MobileDrawer = ({ isOpen, onClose, menuData }) => {
     router.push('/apply-quad')
     onClose(false)
   }
+
   const handleCkickAbout = () => {
    router.push('/about')
     onClose(false)
   }
+  
   const handleClickAddons = () => {
     router.push('/add-ons')
     onClose(false)
@@ -87,9 +89,12 @@ const MobileDrawer = ({ isOpen, onClose, menuData }) => {
                                   <h4 className="text-lg font-semibold text-[#FFFFFF] mb-2 sansFlex">{section.title}</h4>
                                   <p className="text-sm text-[#FFFFFF]/80 mb-3 sansFlex">{section.description}</p>
                                   {section.cta && (
-                                    <a href="" className="inline-block text-sm font-medium text-[#5E17EB] bg-[#FFFFFF] px-4 py-2 uppercase sansFlex hover:bg-[#FFFFFF]/90 transition-all duration-200">
-                                      {section.cta}
-                                    </a>
+                                    <Link 
+                                      href={section.link || '/'}
+                                      onClick={() => onClose(false)}
+                                      className="inline-block text-sm font-medium text-[#5E17EB] bg-[#FFFFFF] px-4 py-2 uppercase sansFlex hover:bg-[#FFFFFF]/90 transition-all duration-200">
+                                        {section.cta}
+                                    </Link>
                                   )}
                                 </div>
                               )}
@@ -135,7 +140,8 @@ const MobileDrawer = ({ isOpen, onClose, menuData }) => {
                         <div className="pb-4 border-b border-[#FFFFFF]/20 last:border-b-0">
                           <ul className="space-y-2">
                             <li>
-                              <Link href="/"
+                              <Link href="/faq"
+                                onClick={() => onClose(false)}
                                 className="w-full flex items-center justify-between text-base font-medium text-[#FFFFFF] hover:text-[#FFFFFF]/80 py-2 cursor-pointer sansFlex"
                               >
                                 FAQs

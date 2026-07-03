@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import ScrollAnimatedElement from "../../Reusable/ScrollAnimatedElement";
 import { features } from "@/utilities/constants";
+import Link from "next/link";
 
 const ContactComponent = () => {
   const [formData, setFormData] = useState({
@@ -62,13 +63,17 @@ const ContactComponent = () => {
           {/* Action CTAs */}
           <ScrollAnimatedElement delay={0.5}>
             <div className="flex flex-col sm:flex-row flex-wrap gap-4">
-              <button className="bg-[#FFB433] text-[#1F232E] font-bold text-sm p-4 sm:p-[16px_26px] h-auto sm:h-12.75 rounded-full transition-all duration-200 hover:bg-[#ffa71a] hover:scale-[1.02] active:scale-[0.98] border border-solid border-[#00000000] cursor-pointer">
+              <Link 
+                href="/create-account"
+                className="bg-[#FFB433] text-[#1F232E] font-bold text-sm p-4 sm:p-[16px_26px] h-auto sm:h-12.75 rounded-full transition-all duration-200 hover:bg-[#ffa71a] hover:scale-[1.02] active:scale-[0.98] border border-solid border-[#00000000] cursor-pointer">
                 Create Account & Apply
-              </button>
+              </Link>
 
-              <button className="bg-[#FFFFFF1A] text-[#FFFFFF] border border-solid border-[#00000000] font-bold leading-5.25 text-sm p-4 sm:p-[16px_26px] h-auto sm:h-12.75 rounded-full transition-all duration-200 hover:bg-[#3A404D] hover:text-white hover:scale-[1.02] active:scale-[0.98] cursor-pointer">
+              <Link
+                href="/book-20-minute-meeting"
+                className="bg-[#FFFFFF1A] text-[#FFFFFF] border border-solid border-[#00000000] font-bold leading-5.25 text-sm p-4 sm:p-[16px_26px] h-auto sm:h-12.75 rounded-full transition-all duration-200 hover:bg-[#3A404D] hover:text-white hover:scale-[1.02] active:scale-[0.98] cursor-pointer">
                 Book a 20-Minute Meeting
-              </button>
+              </Link>
             </div>
           </ScrollAnimatedElement>
 
