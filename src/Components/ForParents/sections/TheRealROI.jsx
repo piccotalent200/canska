@@ -215,9 +215,10 @@ const TheRealROI = () => {
                                 <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-brandDark mb-4">
                                     The Investment: Depth Before Height
                                 </h2>
-                                <p className="font-medium text-base leading-[24px] text-brandDark/80 mb-6">
+                                <p className="font-medium text-base leading-[24px] text-brandDark/80">
                                     Roots before reach. A deep foundation supports a tall future.
                                 </p>
+                                <hr className="border-[#EDE7FB] my-4 block" />
                                 <div className="font-medium text-sm leading-[25px] text-brandDark">
                                     <p>
                                         A child rushed to achieve in primary school is a child whose roots are shallow. We invert the pressure: build deep roots — emotional, intellectual, physical, ethical — and the height takes care of itself. The trees that storms cannot topple are the trees with deep roots, planted patiently over years.
@@ -314,9 +315,10 @@ const TheRealROI = () => {
                                 <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-brandDark mb-4">
                                     The First Light
                                 </h2>
-                                <p className="font-medium text-base leading-[24px] text-brandDark/80 mb-6">
+                                <p className="font-medium text-base leading-[24px] text-brandDark/80">
                                     The first instincts you wire in shape the way they see every sunrise.
                                 </p>
+                                <hr className="border-[#EDE7FB] my-4 block" />
                                 <div className="font-medium text-sm leading-[25px] text-brandDark">
                                     <p>
                                         A child’s first smile of recognition, first meaningful word, or first instinct to seek comfort in you represents a deep connection. These small yet powerful milestones show that the foundation is strong. They remind us that love does not divide, it multiplies.
@@ -419,9 +421,10 @@ const TheRealROI = () => {
                                 <h2 className="font-extrabold text-xl sm:text-[22px] leading-[28px] text-brandDark mb-4">
                                     A Shared Vision of the Future
                                 </h2>
-                                <p className="font-medium text-base leading-[24px] text-brandDark/80 mb-6">
+                                <p className="font-medium text-base leading-[24px] text-brandDark/80">
                                     Co-create the next decade with your child — direction matters more than destination.
                                 </p>
+                                <hr className="border-[#EDE7FB] my-4 block" />
                                 <div className="font-medium text-sm leading-[25px] text-brandDark">
                                     <p>
                                         At Canska, we build spaces for communities that are still taking shape. Homes that will witness celebrations, very quiet moments, and new beginnings. In a similar way, parents shape individuals who will carry values, strength, and compassion into the future.
@@ -511,7 +514,7 @@ const TheRealROI = () => {
                         {/* Right Column: CTA Pill Action Component */}
                         <div className="flex-shrink-0 flex max-sm:flex-col gap-[12px] self-start md:self-auto pt-4 md:pt-0 max-lg:w-full max-lg:justify-start">
                             <Link
-                                href="/"
+                                href="/about"
                                 className="inline-flex items-center gap-2.5 bg-[#FFB433] text-[#2D0B70] px-[25.8px] py-[13.8px] h-[50.6px] rounded-full font-semibold text-base leading-[24px] tracking-[-0.14px] hover:bg-[#e09d2a] transition-all duration-200 group"
                             >
                                 <span className="flex-1 text-left">Read About us</span>

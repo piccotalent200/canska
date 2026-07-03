@@ -59,7 +59,7 @@ const NewHeaderComponent = () => {
 
           <div className="max-[1100px]:hidden flex gap-[16px] h-full">
             <Link
-              href=""
+              href="/add-ons"
               className="text-xs xl:text-sm h-full flex items-center min-[1400px]:!text-base leading-[20px] font-medium text-[#FFFFFF] whitespace-nowrap"
             >
               {" "}
@@ -67,7 +67,7 @@ const NewHeaderComponent = () => {
             </Link>
 
             <Link
-              href=""
+              href="/about"
               className="text-xs xl:text-sm h-full flex items-center min-[1400px]:!text-base leading-[20px] font-medium text-[#FFFFFF] whitespace-nowrap"
             >
               About
@@ -107,20 +107,20 @@ const NewHeaderComponent = () => {
                     </Link>
                   </MenuItem>
                   <MenuItem>
-                    <a
-                      href="#"
+                    <Link
+                      href="/blog"
                       className="block text-[20px] leading-[24px] font-medium text-[#5E17EB] p-[12px_24px] hover:bg-[#5E17EB1A]"
                     >
                       Blog
-                    </a>
+                    </Link>
                   </MenuItem>
                   <MenuItem>
-                    <a
-                      href="#"
+                    <Link
+                      href="/contact-us"
                       className="block text-[20px] leading-[24px] font-medium text-[#5E17EB] p-[12px_24px] hover:bg-[#5E17EB1A]"
                     >
                       Contact us
-                    </a>
+                    </Link>
                   </MenuItem>
                 </div>
               </MenuItems>

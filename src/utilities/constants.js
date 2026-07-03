@@ -2104,3 +2104,352 @@ export const featureBlocksWhyQuad = [
     description: 'Parenting in the elite-admissions era is exhausting precisely because no one knows what to do. Canska gives every family a defensible 12-year architecture—clear priorities, structured cadences, transparent metrics—so parents can stop strategizing and start nurturing. The peace of mind that comes from knowing the long-term plan is sound is, for many families, the program\'s most underrated gift.'
   }
 ];
+// Policy Sections for the Legal Component
+export const policySections = [
+  {
+    id: 1,
+    title: "1) Information We Collect",
+    content:
+      "We collect your personal information that you voluntarily provide when creating a user account, contacting us through the website, or using our web services. Personal information may include: full name, date of birth, email address, telephone number, postal address, account login details, and other information necessary to provide services or respond to inquiries. We may also collect technical information such as Internet Protocol addresses, browser type, device information, and website usage data when you access or use the Site.",
+  },
+  {
+    id: 2,
+    title: "2) How We Use Your Information",
+    content:
+      "The information we collect may be used to create and manage user accounts, provide requested services and support, respond to inquiries and communications, improve the performance and usability of the Site, analyse usage patterns and enhance user experience, communicate important notices regarding accounts or services, and conduct internal administrative activities and research. Promotional communications will only be sent if you have chosen or agreed to receive such information.",
+  },
+  {
+    id: 3,
+    title: "3) Account Activity and System Logs",
+    content:
+      "When you log into your user account, your activity may be recorded by our systems. This information helps us maintain account functionality, detect any technical issues, monitor Site security, and improve performance. User activity information remains private and is not made publicly available.",
+  },
+  {
+    id: 4,
+    title: "4) Cookies",
+    content:
+      "The Site may use cookies to improve functionality and user experience. A cookie is a small data file stored on your device that allows the website to recognise your browser and remember certain information. Most recent web browsers automatically accept cookies. You may modify your browser settings to refuse cookies or notify you when cookies are being used. However, certain features of the Site may not function properly if cookies are fully disabled.",
+  },
+  {
+    id: 5,
+    title: "5) Information Sharing and Disclosure",
+    content:
+      "We do not sell or share personal information to third parties. Personal information may be disclosed when required by applicable laws or legal processes, to comply with lawful requests from government authorities, to protect the rights, property, or safety of the Company, users, or the public, to investigate fraud, security issues, or misuse of the Site, or in connection with a merger, acquisition, restructuring, or sale of company assets.",
+  },
+  {
+    id: 6,
+    title: "6) International Data Storage",
+    content:
+      "Information collected through the Site may be stored or processed on servers located in different countries where the Company or its service providers maintain data storage facilities. By using the Site, you consent to such transfer and storage of information.",
+  },
+  {
+    id: 7,
+    title: "7) Account Closure and Data Retention",
+    content:
+      "You may close your user account at any time through the account settings available on the Site. Once a user account is closed, personal information associated with the account will be deleted or anonymised where reasonably possible. Certain information may be retained for a limited period where required for legal, regulatory, or security purposes.",
+  },
+  {
+    id: 8,
+    title: "8) Access and Correction of Personal Information",
+    content:
+      "Users may update or correct their user account information by logging into their account profile. If you wish to request access to personal information held by the Company or request correction of inaccurate information, you may contact us through the contact details provided on the Site.",
+  },
+  {
+    id: 9,
+    title: "9) Data Security",
+    content:
+      "The Company implements reasonable technical and organisational measures to protect personal information from unauthorised access, misuse, alteration, or loss. Data transmitted through the Site may be protected using secure encryption protocols. Despite these safeguards, no system of data transmission or storage can be guaranteed to be completely secure.",
+  },
+  {
+    id: 10,
+    title: "10) Children and Student Privacy",
+    content:
+      "Protecting student privacy is very important to us. User accounts for students should be created or supervised by a parent, guardian, or authorised educator. We don't intentionally collect personal information from children below the age permitted by applicable laws without appropriate parental or guardian involvement.",
+  },
+  {
+    id: 11,
+    title: "11) Email Communications",
+    content:
+      "Users may receive administrative emails related to their account, service updates, or important policy changes. Promotional communications will only be sent where consent has been given. Users may unsubscribe from promotional communications at any time.",
+  },
+  {
+    id: 12,
+    title: "12) Changes to Privacy Policy",
+    content:
+      "This Privacy Policy may be updated from time to time. Any significant changes will be communicated through the Site or through email notifications where appropriate. The version of the Privacy Policy in effect at the time the information is collected will govern how that user information is processed.",
+  },
+  {
+    id: 13,
+    title: "13) Contact Information",
+    content:
+      "If you have questions about this Privacy Policy or about how personal information is handled, you may contact the Company using the contact details available on the Site.",
+  },
+];
+
+// Terms of Use Data for the Legal Component
+export const termsOfUseData = [
+  {
+    id: 1,
+    title: "1) Eligibility and Acceptance",
+    content: "By using this Site you confirm that you are legally capable of entering into a binding agreement under applicable laws[cite: 49]. If you are using the Site on behalf of an organisation, you confirm authority to bind that organisation[cite: 50]. The Company reserves the right to update these Terms at any time[cite: 51]. Continued use after updates constitutes acceptance[cite: 51]."
+  },
+  {
+    id: 2,
+    title: "2) Description of Services",
+    content: "The Site provides educational resources, web learning materials, assessments, training tools, and related services for educational and informational purposes[cite: 54]. All services are provided on an \"as is\" and \"as available basis[cite: 55]. The Company reserves the right to modify, suspend, or discontinue any part of the Site at any time[cite: 55]."
+  },
+  {
+    id: 3,
+    title: "3) User Registration",
+    content: "Certain features require users to create an account[cite: 58]. When registering you agree to provide accurate, current, and complete information[cite: 58]. If the Company reasonably believes any information provided is incorrect or outdated, it reserves the right to suspend or terminate the account without prior notice[cite: 59]."
+  },
+  {
+    id: 4,
+    title: "4) User Accounts and Security",
+    content: "Each account is intended for use by a single individual only[cite: 61]. Sharing or transferring accounts is stringently prohibited[cite: 61]. You are entirely responsible for safeguarding your login credentials and all activities under your account[cite: 62]."
+  },
+  {
+    id: 5,
+    title: "5) Membership and Subscriptions",
+    content: "The Site may offer paid memberships or subscription services[cite: 64]. Unless otherwise specified, a membership remains valid for twelve months from activation[cite: 64]. The Company reserves the right to change plans, pricing, and features, with reasonable notice where possible[cite: 65]."
+  },
+  {
+    id: 6,
+    title: "6) Payments and Refunds",
+    content: "Payments for memberships, products, or services are subject to the terms presented at purchase[cite: 67]. Unless otherwise stated, fees paid for digital services or memberships are generally non refundable[cite: 68]. Refunds may be issued at the discretion of the Company or where required by applicable law[cite: 69]."
+  },
+  {
+    id: 7,
+    title: "7) Acceptable Use",
+    content: "You agree to use the Site only for lawful, personal purposes[cite: 72]. Users must not reproduce, distribute, or commercially exploit website content without permission; use automated tools such as bots or scripts; interfere with operation or security; or upload unlawful or harmful content[cite: 73, 74]. Violations will result in termination and legal action[cite: 74, 75]."
+  },
+  {
+    id: 8,
+    title: "8) Intellectual Property Rights",
+    content: "All content available on the Site is owned by or licensed to the Company and protected by applicable intellectual property laws[cite: 80]. Users may access the web content only for personal, educational, and non-commercial purposes[cite: 81]. Reproduction, distribution, modification, or commercial use without prior written permission is stringently prohibited[cite: 82]."
+  },
+  {
+    id: 9,
+    title: "9) User Submitted Content",
+    content: "If you submit feedback, comments, suggestions, or other materials to the Company, you grant the Company a worldwide, non-exclusive, royalty free licence to use, reproduce, publish, and distribute such content for genuine business or commercial purposes[cite: 83]."
+  },
+  {
+    id: 10,
+    title: "10) Third Party Links",
+    content: "The Site may contain links to external websites operated by third parties[cite: 84]. These links are provided for information or convenience only[cite: 85]. The Company does not control and is not responsible for the content, policies, or practices of such websites[cite: 85]."
+  },
+  {
+    id: 11,
+    title: "11) Privacy and Data Protection",
+    content: "Your use of the Site is subject to the Privacy Policy and Data Protection Statement which explain how personal data is collected, processed, stored, used, and protected[cite: 91]."
+  },
+  {
+    id: 12,
+    title: "12) Disclaimer of Warranties",
+    content: "The Site and its services are provided on an \"as is\" and \"as available\" basis[cite: 92]. To the fullest extent permitted by law, the Company disclaims all warranties whether express or implied including warranties of merchantability, suitability for a particular purpose, accuracy, and non-infringement[cite: 93]."
+  },
+  {
+    id: 13,
+    hasSectionIcon: true,
+    title: "13) Limitation of Liability",
+    content: "To the maximum extent permitted by law, the Company shall not be liable for any indirect, incidental, or consequential damages arising from the use of the Site or web services[cite: 94]. Nothing in these Terms excludes liability where such exclusion is not permitted by applicable law[cite: 95]."
+  },
+  {
+    id: 14,
+    title: "14) Termination of Access",
+    content: "The Company may suspend or terminate user access if these Terms are violated or if user activity may harm the Site, the Company, or other users[cite: 96]. Upon termination, your right to access the Site and all services will immediately end[cite: 97, 98]."
+  },
+  {
+    id: 15,
+    title: "15) Governing Law and Jurisdiction",
+    content: "These Terms are governed by the laws of the Republic of India[cite: 99]. Any disputes arising from the use of the Site shall be subject to the jurisdiction of the competent courts located in the state of Tamil Nadu[cite: 100]."
+  },
+  {
+    id: 16,
+    hasSectionIcon: true,
+    title: "16) Severability",
+    content: "If any provision of these Terms is found to be invalid or unenforceable by a court of competent jurisdiction, that provision shall be interpreted consistently with applicable law and the remaining provisions shall continue in full force and effect[cite: 103]."
+  },
+  {
+    id: 17,
+    title: "17) Entire Agreement",
+    content: "These Terms together with the Privacy Policy and related policies constitute the complete agreement between the user and the Company regarding the use of the Site[cite: 105]."
+  },
+  {
+    id: 18,
+    hasSectionIcon: true,
+    title: "18) Digital Content Licensing",
+    content: "Educational materials including course modules, assessments, downloadable resources, and training content are licensed to users for personal educational use only[cite: 108]. The licence is limited, non-exclusive, non-transferable, and revocable[cite: 109]."
+  },
+  {
+    id: 19,
+    title: "19) Academic Integrity",
+    content: "Users must complete assessments honestly and without unauthorised assistance[cite: 110]. The Company reserves the right to nullify results, suspend accounts, or revoke certificates where academic misconduct is identified[cite: 110]."
+  },
+  {
+    id: 20,
+    title: "20) Screen Recording and Content Capture",
+    content: "Users must not record, capture, reproduce, or distribute video lessons, training materials, or assessment content through screen recording devices or similar methods without prior written permission[cite: 113]."
+  },
+  {
+    id: 21,
+    hasSectionIcon: true,
+    title: "21) Automated Access and AI Use",
+    content: "Users must not use artificial intelligence systems, automated scripts, scraping tools, or similar technologies to extract, reproduce, or analyse educational content from the Site without explicit authorisation[cite: 114]."
+  },
+  {
+    id: 22,
+    title: "22) Certificate Validity",
+    content: "Certificates issued by the Company represent completion of specific learning activities[cite: 121]. Such certificates do not constitute professional accreditation unless expressly stated[cite: 122]."
+  },
+  {
+    id: 23,
+    title: "23) Platform Security",
+    content: "Users are strictly prohibited from attempting to probe, test, bypass, or compromise the Site's security measures, including vulnerability scanning, unauthorised access attempts, or system intrusion[cite: 123]."
+  },
+  {
+    id: 24,
+    hasSectionIcon: true,
+    title: "24) Service Availability",
+    content: "The Company may conduct maintenance, updates, or infrastructure improvements that may temporarily affect access to the Site[cite: 124]. Reasonable efforts will minimise service interruptions[cite: 125]."
+  },
+  {
+    id: 25,
+    title: "25) Contact Information",
+    content: "Any questions regarding these Terms may be directed to the Company using the contact information provided on the Site[cite: 126, 127]."
+  }
+];
+
+// Child Safety Data for the Legal Component
+export const childSafetyData = [
+  {
+    id: 1,
+    title: "Technical Assurance",
+    content: "Student identities are protected through unique student identification numbers. Only limited information—the student ID, first name, and country—is accessible to mentors and staff for operational purposes[cite: 132]. All other personally identifiable data remains protected. Access to sensitive student information is strictly restricted to a designated group of authorised personnel[cite: 133]. All official communication is conducted exclusively through the digital dashboard; communication outside the dashboard is strictly prohibited[cite: 134]. Every message is automatically time-stamped and securely archived for transparency and accountability[cite: 135]."
+  },
+  {
+    id: 2,
+    title: "Policy Commitment",
+    content: "We take a zero-tolerance approach to child misconduct, abuse, and harm[cite: 136]. We uphold the Office of the Children's Welfare Standards and applicable frameworks including local child protection legislation, UNICEF safeguarding principles, and data protection standards such as GDPR[cite: 137]. Child safety is a collective responsibility embedded throughout recruitment, onboarding, training, policies, and everyday practices[cite: 138]. All mentors and employees complete a rigorous recruitment process requiring valid photo ID, a police certificate, and relevant qualifications[cite: 139]. All live mentoring sessions should take place in a noticeable, shared space with a parent or guardian present whenever possible[cite: 140]."
+  },
+  {
+    id: 3,
+    title: "Students @ Canska",
+    content: "Students are at the heart of everything we do. We engage students in decisions that affect their learning, wellbeing, and support [cite: 141]; encourage them to share their views and speak up if something feels wrong [cite: 142]; offer clear and accessible ways for students to provide feedback or raise concerns [cite: 143]; and foster an inclusive environment for children from diverse cultural backgrounds[cite: 144]."
+  },
+  {
+    id: 4,
+    title: "Team Members @ Canska",
+    content: "Everyone at Canska shares a collective responsibility for safeguarding and promoting the wellbeing of every child in our care[cite: 145]. All team members must follow our Child Safety Code of Conduct, comply with policies and procedures for identifying and reporting risks, and foster safe, respectful, and professional learning environments[cite: 146]."
+  },
+  {
+    id: 5,
+    title: "The Code of Conduct",
+    content: "All team members must: act professionally and respectfully toward students and parents; strictly comply with the Canska Child Safety Policy [cite: 148]; maintain proper professional boundaries and avoid private contact; protect students from harm or abuse [cite: 149]; foster an ethically safe, inclusive learning environment; communicate with students only for mentorship purposes; use respectful language[cite: 150]; and report any concerns directly to the CEO. Team members must NOT: search for personal social media accounts of students [cite: 151]; engage in private conversations with students or parents; have contact with students outside mentorship activity [cite: 152]; use social media to communicate with students; make inappropriate comments; work under the influence[cite: 153]; or discriminate based on gender, race, religion, or disability. Any violation may result in immediate dismissal and notification to law enforcement[cite: 154]."
+  },
+  {
+    id: 6,
+    title: "Recruitment and Screening",
+    content: "We require all mentors and staff to provide valid photo IDs, proof of current address, a recent bank statement, and a police certificate before starting work[cite: 156]. We verify all education documents, work experience letters, and references, and review relevant personal/professional social media profiles[cite: 157]. Child safety expectations are clearly communicated in job advertisements and throughout the interview and onboarding process[cite: 158]."
+  },
+  {
+    id: 7,
+    title: "Training and Support",
+    content: "All new team members complete child safety training during onboarding and must agree to our Child Safety Code of Conduct[cite: 160]. We provide continuous refreshers and updates to ensure sustained awareness of policies and reporting procedures[cite: 161]. We equip our team to identify signs of abuse or grooming, monitor risk across learning environments, report concerns appropriately, and understand the impact of their behaviour on students[cite: 162]."
+  },
+  {
+    id: 8,
+    title: "Raising Concerns",
+    content: "We encourage students, parents, and team members to speak up if something doesn't feel right—no concern is ever considered too small[cite: 164]. When serious concerns are raised, we respond promptly and professionally: assessing the concern impartially and confidentially, prioritising the wellbeing and safety of any student involved, maintaining accurate records, and escalating to external authorities where required[cite: 165]."
+  }
+];
+
+// Data Security Notice Data for the Legal Component
+export const dataSecurityNoticeData = [
+  {
+    id: 1,
+    hasSectionIcon: false,
+    title: "Purpose of Data Processing",
+    content: "We collect and process personal data to support our operations, manage our activities, and provide services that are necessary or requested[cite: 167]. Personal data will only be used for these purposes unless we provide advance notice of any additional use through official communication[cite: 168]."
+  },
+  {
+    id: 2,
+    hasSectionIcon: false,
+    title: "Sharing with Service Providers",
+    content: "We do not disclose personal data to unauthorised individuals or organisations[cite: 171]. Personal data may be shared with trusted third-party service providers where such disclosure is necessary for them to perform services on our behalf, including operational support, research activities, or service delivery[cite: 172]. Data may also be disclosed to funding bodies, regulatory authorities, or government agencies where required by applicable laws[cite: 173]."
+  },
+  {
+    id: 3,
+    hasSectionIcon: false,
+    title: "No Marketing Sale",
+    content: "We don't share, sell, trade, or otherwise disclose personal data to any organisation for marketing purposes or for financial or non-financial gain[cite: 174]."
+  },
+  {
+    id: 4,
+    hasSectionIcon: true, // Based on "S International Transfers" typo indicator
+    title: "International Transfers",
+    content: "Where personal data is transferred to third parties located in countries whose data protection laws may not provide the same level of protection as those in the United States of America or the European Economic Area, we implement appropriate technical, contractual, and organisational safeguards to ensure that personal data remains secure and adequately protected[cite: 176]."
+  },
+  {
+    id: 5,
+    hasSectionIcon: false,
+    title: "Communications and Consent",
+    content: "If you have provided consent to receive promotional or informational communications, we may occasionally contact you with updates regarding new services, activities, or relevant offerings from approved partners, as well as invitations to participate in surveys or educational research[cite: 179]. You may withdraw your consent and opt out at any time by following the unsubscribe instructions or contacting us[cite: 180]."
+  },
+  {
+    id: 6,
+    hasSectionIcon: false,
+    title: "Your Rights",
+    content: "You have the right to request access to the personal data we hold about you[cite: 183]. Subject to applicable laws, you may also have the right to request correction, updating, or deletion of your personal data where appropriate[cite: 184]."
+  },
+  {
+    id: 7,
+    hasSectionIcon: true,
+    title: "Updates",
+    content: "We may update this Data Protection Statement periodically[cite: 185]. The version in effect at the time your personal data is collected will govern how that data is processed[cite: 185]. For more information, please refer to our Privacy Policy[cite: 186]."
+  }
+];
+
+// Website Disclaimer Data for the Legal Component
+export const websiteDisclaimerData = [
+  {
+    id: 1,
+    title: "No Warranty of Accuracy",
+    content: "We make no representations or warranties, express or implied, regarding the accuracy, completeness, reliability, or suitability of any information or content contained on this website[cite: 188]. All content may be updated, modified, or removed at any time without prior notice[cite: 189]. We accept no legal responsibility or liability for any text errors, omissions, or outdated information[cite: 190]."
+  },
+  {
+    id: 2,
+    title: "No Liability for Technical Issues",
+    content: "We are not responsible for any damage to your computer system, device, software, or data arising from viruses, malware, spyware, or other harmful components that may result from accessing, using, browsing, or downloading materials from this website[cite: 192, 193]. We also accept no responsibility for any interruptions or discontinuation of the website's availability due to upgrades, server maintenance, technical issues, or content updates[cite: 194]."
+  },
+  {
+    id: 3,
+    title: "Personal, Non-Commercial Use",
+    content: "You may view, download, or print materials from this website solely for personal, non-commercial use[cite: 196]. Any reproduction, redistribution, resale, or other use of the content for commercial purposes without advance written permission is strictly prohibited and may violate applicable intellectual property laws[cite: 197]."
+  },
+  {
+    id: 4,
+    title: "Intellectual Property",
+    content: "All content on this website including text, graphics, images, files, and logos is protected by applicable copyright and intellectual property laws[cite: 201]. When downloading or printing materials, you must retain all copyright and proprietary notices[cite: 202]."
+  },
+  {
+    id: 5,
+    title: "Privacy of Personal Information",
+    content: "Any personal information you provide to us including your name, date of birth, address, telephone number, or email address will be treated as highly confidential and handled in accordance with applicable privacy and data protection practices[cite: 203]. However, we reserve the right to use any comments, suggestions, ideas, concepts, or know-how contained in your communications for valid commercial purposes[cite: 204]."
+  },
+  {
+    id: 6,
+    title: "Prohibited Transmissions",
+    content: "You are strictly prohibited from transmitting to this website any material that is unlawful, threatening, defamatory, abusive, obscene, violent, or otherwise objectionable[cite: 205]. We reserve the right to cooperate fully with law enforcement authorities or comply with legal orders requiring full disclosure of such information[cite: 206]."
+  },
+  {
+    id: 7,
+    title: "External Links",
+    content: "This website may contain links to external websites for informational purposes[cite: 208]. We do not review, control, or endorse the content of such websites and are not responsible for their accuracy, availability, or practices[cite: 209]. Accessing third-party websites is done entirely at your own risk[cite: 210]."
+  },
+  {
+    id: 8,
+    title: "Changes to this Disclaimer",
+    content: "We reserve the right to amend, modify, or update this disclaimer at any time without prior notice[cite: 212]. By continuing to use this website, you agree to be bound by the current version of this disclaimer[cite: 213]."
+  }
+];

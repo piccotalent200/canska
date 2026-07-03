@@ -7,6 +7,7 @@ import HeroSection from './sections/HeroSection';
 import TheStrategicValue from './sections/TheStrategicValue';
 import AdmissionsInsights from './sections/AdmissionsInsights';
 import ParentalCommitment from './sections/ParentalCommitment';
+import StudentWorkloadPolicy from './sections/StudentWorkloadPolicy';
 
 
 const customTabsTheme = {
@@ -100,6 +101,10 @@ const ForParents = () => {
 
                     <Tabs.Item active={activeTab === 3} title={renderTabTitle("04", "Parental Commitment", 3)}>
                         <ParentalCommitment/>
+                    </Tabs.Item>
+
+                    <Tabs.Item active={activeTab === 4} title={renderTabTitle("05", "Student Workload Policy", 4)}>
+                        <StudentWorkloadPolicy/>
                     </Tabs.Item>
                 </Tabs>
             </div>

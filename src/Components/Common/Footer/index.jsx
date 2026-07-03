@@ -20,12 +20,12 @@ const Footer = () => {
   ]
 
   const navItems = [
-    { label: "Parent Resources", href: "/resources" },
+    { label: "Parent Resources", href: "/for-parents" },
     { label: "FAQs", href: "/faq" },
     { label: "About Canska", href: "/about" },
-    { label: "Contact Us", href: "/contact" },
-    { label: "Sitemap", href: "/sitemap" },
-    { label: "Legal", href: "/legal/privacy-policy" },
+    { label: "Contact Us", href: "/contact-us" },
+    { label: "Sitemap", href: "/" },
+    { label: "Legal & Policies", href: "/legal/privacy-policy" },
   ];
   return (
     <footer className="font-dm border-t border-solid border-[#FFFFFF33] bg-[#1F232E] text-[#FFFFFFA6] font-sans antialiased text-sm select-none px-4 sm:px-6 md:px-8 lg:px-[61px] pt-12 sm:pt-16 md:pt-20 lg:pt-[81px] pb-6 lg:pb-[24px]">

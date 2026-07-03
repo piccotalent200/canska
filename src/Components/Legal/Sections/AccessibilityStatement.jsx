@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const accessibilityStatement = [
   {
@@ -68,8 +69,8 @@ const AccessibilityStatement = () => {
           </h4>
         </div>
 
-        <a
-          href="/contact"
+        <Link
+          href="/contact-us"
           className="inline-flex items-center justify-between gap-3 bg-[#5E17EB] border border-[#5E17EB] text-white px-8 h-[54px] rounded-full hover:bg-[#4d10c7] transition-all duration-200 group w-full md:w-auto"
         >
           <span className="text-[15.7px] font-medium tracking-wide">
@@ -89,7 +90,7 @@ const AccessibilityStatement = () => {
               strokeLinejoin="round"
             />
           </svg>
-        </a>
+        </Link>
       </div>
     </article>
   );
