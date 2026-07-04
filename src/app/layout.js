@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className='h-full antialiased [&[style="overflow:_hidden;_padding-right:_17px;"]]:!overflow-visible [&[style="overflow:_hidden;_padding-right:_17px;"]]:!pe-0'>
+    <html lang="en" className='h-full antialiased !overflow-visible !pe-0'>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
